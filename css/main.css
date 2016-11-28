@@ -41,7 +41,7 @@ footer p {
 }
 .musicImgBand {
   display: inline-block;
-  width: 40vmin;
+  max-width: 60%;
   margin-bottom: 20px;
 }
 .bandImg {
@@ -201,6 +201,17 @@ div.main section > div {
   #band {
     height: 135vmin;
   }
+  .musicImgBand {
+    max-width: 50%;
+  }
+}
+@media (max-width: 600px) {
+  #band p {
+    font-size: 3vmin;
+  }
+  #band {
+    height: 150vmin;
+  }
 }
 @media (max-width: 554px) {
   body {
@@ -210,10 +221,10 @@ div.main section > div {
     font-size: 26px;
   }
   #band {
-    height: 160vmin;
+    height: 180vmin;
   }
   #band p {
-    font-size: 3vmin;
+    font-size: 4vmin;
   }
   .band-a {
 
@@ -256,47 +267,24 @@ div.main section > div {
     padding-top: 40vmin;
   }
   #band {
-    height: 170vmin;
+    height: 185vmin;
+  }
+  .latoSmall {
+    font-size: 20px;
   }
 }
 
-@media all and (max-width: 519px) {
-  /*make all the wrapper <div> tags wider and reposition them*/
-  div.main section > div {
-
-  }
-
-  /*and adjust the margin of our <p> tags*/
-  p:last-child {
-
-  }
-
-  h1 {
-  }
-}
-
-/*media queries to switch to low-res bgs*/
-@media all and (max-height: 590px) {
-  /*590px is the max height of our low-res pictures*/
-  /*#home {
-    background-color: #000;
-  }
-
-  #music {
-    background-image: url(../imgs/orange-quarters-low-res.jpg);
-  }
-
-  #contact {
-    background-image: url(../imgs/cosy-cafe-low-res.jpg);
-  }*/
-}
 @media (max-width: 400px) {
   .musicImg {
     display: inline-block;
     width: 50vmin;
     margin-top: 10vmin
   }
-
+}
+@media (max-width: 366px) {
+  #band {
+    height: 205vmin;
+  }
 }
 .loadlogo {
   z-index: 2000;
