@@ -39,6 +39,11 @@ footer p {
   display: inline-block;
   width: 50vmin;
 }
+.musicImgBand {
+  display: inline-block;
+  width: 40vmin;
+  margin-bottom: 20px;
+}
 .bandImg {
   width: 300px;
   display: inline-block;
@@ -71,7 +76,6 @@ div.main section {
     position: absolute; <div> that contains our text elements
   */
   position:relative;
-  border-bottom: 10px solid #000;
 }
 
 /*the last <section> tag should not have a border*/
@@ -176,24 +180,47 @@ div.main section > div {
   background-image, so we use their ids to assign each image
 */
 #home {
-  background-image: url(../imgs/Anfal_ShamsudeenRedone.jpg);
+  background-image: url(../imgs/Anfal_ShamsudeenRedone_50.jpg);
   background-position: center bottom;
 }
 
 #band {
   background-color: #000;
 }
-
+.band-a{
+  margin-top: 20px;
+}
 #contact {
-  background-image: url(../imgs/pexels-photo-11968550Redone.jpg);
+  background-image: url(../imgs/pexels-photo-11968550Redone_50.jpg);
 
   padding-top: 30vmin;
 }
 
 /*media queries to improve experience on smaller devices*/
+@media (max-width: 767px) {
+  #band {
+    height: 135vmin;
+  }
+}
 @media (max-width: 554px) {
   body {
+    font-size: 5vmin;
+  }
+  h1 {
+    font-size: 26px;
+  }
+  #band {
+    height: 160vmin;
+  }
+  #band p {
     font-size: 3vmin;
+  }
+  .band-a {
+
+  }
+
+  #bandNav, #contactNav {
+    font-size: 4vmin;
   }
   .karin {
     margin-top: 10px;
@@ -208,7 +235,7 @@ div.main section > div {
     display: inline-block;
   }
   .social2 {
-    width: 8vmin;
+    width: 9vmin;
     padding-left: 10px;
     display: inline-block;
   }
@@ -216,6 +243,20 @@ div.main section > div {
     display: inline-block;
     width: 50vmin;
     margin-top: 5vmin
+  }
+  .btn-default {
+    width: 50vmin;
+
+    font-size: 5vmin;
+
+  }
+}
+@media (max-width: 450px) {
+  #contact {
+    padding-top: 40vmin;
+  }
+  #band {
+    height: 170vmin;
   }
 }
 
