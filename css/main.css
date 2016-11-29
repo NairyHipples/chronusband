@@ -187,6 +187,9 @@ div.main section > div {
 #band {
   background-color: #000;
 }
+#myCarousel {
+  padding-top: 25px;
+}
 .band-a{
   margin-top: 20px;
 }
@@ -199,7 +202,10 @@ div.main section > div {
 /*media queries to improve experience on smaller devices*/
 @media (max-width: 767px) {
   #band {
-    height: 135vmin;
+    height: 165vmin;
+  }
+  #band p {
+    font-size: 3vmin;
   }
   .musicImgBand {
     max-width: 50%;
@@ -210,7 +216,7 @@ div.main section > div {
     font-size: 3vmin;
   }
   #band {
-    height: 150vmin;
+    height: 160vmin;
   }
 }
 @media (max-width: 554px) {
@@ -221,7 +227,7 @@ div.main section > div {
     font-size: 26px;
   }
   #band {
-    height: 180vmin;
+    height: 190vmin;
   }
   #band p {
     font-size: 4vmin;
@@ -269,9 +275,6 @@ div.main section > div {
   #band {
     height: 190vmin;
   }
-  .latoSmall {
-    font-size: 20px;
-  }
 }
 
 @media (max-width: 400px) {
@@ -280,10 +283,16 @@ div.main section > div {
     width: 50vmin;
     margin-top: 10vmin
   }
+  #band p {
+    font-size: 5vmin;
+  }
+  #band {
+    height: 220vmin;
+  }
 }
 @media (max-width: 366px) {
   #band {
-    height: 205vmin;
+    height: 230vmin;
   }
 }
 .loadlogo {
