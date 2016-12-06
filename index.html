@@ -5,10 +5,9 @@
   <meta charset="utf-8">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
   <!-- stylesheets -->
-  <!-- <link rel="stylesheet" href="css/meyerReset.css"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="css/main.css">
 
 </head>
@@ -22,7 +21,7 @@
   <div class="navbar navbar-inverse navbar-fixed-top" ng-controller="navController">
     <div class="container">
       <div class="navbar-header"><!-- Wrapping the collapse menu in .navbar-header for Bootstrap v.3 -->
-        <a class="page-scroll" href="#page-top">
+        <a class="page-scroll smoothScroll" href="#page-top">
           <img class="navbar-brand" src="imgs/logos/Vector2vit2.png" alt="" />
         </a>
 
@@ -37,13 +36,13 @@
 
         <ul class="nav navbar-nav navbar-right">
           <li class="hidden">
-            <a class="page-scroll" href="#page-top"></a>
+            <a class="page-scroll smoothScroll" href="#page-top"></a>
           </li>
           <li>
-            <a id="bandNav" class="page-scroll" href="#band">Band</a>
+            <a id="bandNav" class="page-scroll smoothScroll" href="#band">Band</a>
           </li>
           <li>
-            <a id="contactNav" class="page-scroll info" href="#contact">Contact</a>
+            <a id="contactNav" class="page-scroll info smoothScroll" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -57,9 +56,7 @@
         <img class="musicImg" src="imgs/album/AVARICE-chronus2-fixed.jpg" alt="">
 
         <h1>&quot;Avarice&quot; single out <strong>December 17th</strong></h1>
-        <h1></h1>
         <p class="">available on all platforms.</p>
-        <br>
         <div class="karin2">
           <a target="_blank" href="https://www.facebook.com/"><img class="img-responsive social2" src="imgs/logos/FB-f-Logo__white_1024.png" alt="fblogo" /></a>
           <a target="_blank" href="https://www.youtube.com/user/"><img class="img-responsive social2" src="imgs/logos/YouTube_light_color_icon.png" alt="ytlogo" /></a>
@@ -68,7 +65,7 @@
           <a target="_blank" href="https://www.sporify.com/"><img class="img-responsive social2" src="imgs/logos/Spotify_Icon_RGB_White.png" alt="splogo" /></a>
         </div>
       </div>
-      <a href="#band" class="btn btn-default page-scroll" role="button">Continue</a>
+      <a href="#band" class="btn btn-default page-scroll smoothScroll" role="button">Continue</a>
     </section>
 
     <section id="band">
@@ -142,8 +139,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="scripts/main.js"></script>
-  <script src="scripts/jquery.easing.min.js"></script>
-  <script src="scripts/scrolling-nav.js"></script>
+  <!-- <script src="scripts/jquery.easing.min.js"></script> -->
+  <!-- <script src="scripts/scrolling-nav.js"></script> -->
+  <script src="scripts/smoothscroll.js"></script>
 
 </body>
 </html>

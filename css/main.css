@@ -21,7 +21,9 @@ body {
   font-family: 'Julius Sans One', sans-serif;
 
 }
-
+h1 {
+  font-size: 5vmin;
+}
 footer p {
   font-size: 14px;
 }
@@ -41,7 +43,7 @@ footer p {
 }
 .musicImgBand {
   display: inline-block;
-  max-width: 60%;
+  width: 30vmin;
   margin-bottom: 20px;
 }
 .bandImg {
@@ -130,10 +132,11 @@ div.main section > div {
   display: inline-block;
 }
 .karin2 {
-  margin-top: 0px;
-  margin-bottom: 50px;
+  margin-top: 2vmin;
+  margin-bottom: 2vmin;
 }
 .btn-default {
+  margin-top: 3vmin;
   font-family: 'Julius Sans One', sans-serif;
   width: 40vmin;
   font-size: 4vmin;
@@ -293,6 +296,48 @@ div.main section > div {
 @media (max-width: 366px) {
   #band {
     height: 230vmin;
+  }
+}
+@media (max-height: 440px) {
+  .karin2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .btn-default {
+    margin-top: 10px;
+  }
+  .social2 {
+    width: 10vmin;
+    padding-left: 10px;
+  }
+  .musicImg {
+    width: 40vmin;
+  }
+  .musicImgBand {
+    width: 20vmin;
+  }
+  #myCarousel {
+    padding-top: 0px;
+  }
+  .band-a {
+    margin-top: 0px;
+  }
+}
+@media (max-height: 300px) {
+  .musicImg {
+    width: 20vmin;
+  }
+  .musicImgBand {
+    width: 20vmin;
+  }
+  .carousel-inner {
+    height: 30vmin;
+  }
+}
+@media (max-height: 220px) {
+  hr {
+    margin-top: 0px;
+    margin-bottom: 2px;
   }
 }
 .loadlogo {
