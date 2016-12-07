@@ -199,9 +199,8 @@ div.main section > div {
   margin-top: 20px;
 }
 #contact {
-  background-image: url(../imgs/pexels-photo-11968550Redone_50.jpg);
+  background-image: url(../imgs/pexels-photo-11968550Redone_50_1.jpg);
   padding-top: 30vmin;
-  text-shadow: 0px 0px 10px #000;
 }
 
 /*media queries to improve experience on smaller devices*/
