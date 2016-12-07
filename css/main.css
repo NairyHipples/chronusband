@@ -189,9 +189,11 @@ div.main section > div {
 
 #band {
   background-color: #000;
+  background-image: url(../imgs/pexels-photo-14676_90_4.png);
+  background-position: center bottom;
 }
 #myCarousel {
-  padding-top: 25px;
+  margin-bottom: 25px;
 }
 .band-a{
   margin-top: 20px;
