@@ -303,6 +303,11 @@ div.main section > div {
     height: 230vmin;
   }
 }
+@media (max-height: 550px) {
+  #contact {
+    padding-top: 20vmin;
+  }
+}
 @media (max-height: 440px) {
   .karin2 {
     margin-top: 0px;
@@ -326,6 +331,13 @@ div.main section > div {
   }
   .band-a {
     margin-top: 0px;
+  }
+  #contact {
+    padding-top: 15vmin;
+  }
+  hr {
+    padding-bottom: 2px;
+    margin: 0px;
   }
 }
 @media (max-height: 300px) {
