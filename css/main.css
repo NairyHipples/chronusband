@@ -66,7 +66,7 @@ div.main section {
     notice how we set all background properties here except
     for background-image, which is unique to each <section> tag
   */
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-position: center;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -201,6 +201,7 @@ div.main section > div {
 }
 #contact {
   background-image: url(../imgs/pexels-photo-11968550Redone_50_2.jpg);
+  background-position: center bottom;
   padding-top: 28vmin;
 }
 .contactLogo {
@@ -308,7 +309,7 @@ div.main section > div {
     padding-top: 20vmin;
   }
 }
-@media (max-height: 440px) {
+@media (max-height: 492px) {
   .karin2 {
     margin-top: 0px;
     margin-bottom: 0px;
@@ -340,7 +341,7 @@ div.main section > div {
     margin: 0px;
   }
 }
-@media (max-height: 300px) {
+@media (max-height: 432px) {
   .musicImg {
     width: 20vmin;
   }
@@ -354,6 +355,7 @@ div.main section > div {
     padding-top: 18vmin;
   }
 }
+@media (max-height: 359px) {
 @media (max-height: 220px) {
   hr {
     margin-top: 0px;
