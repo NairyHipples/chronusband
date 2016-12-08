@@ -105,6 +105,7 @@ div.main section > div {
 #bandNav,
 #contactNav {
   font-size: 2.5vmin;
+  padding-top: 15px;
 }
 .nav {
   font-family: 'Julius Sans One', sans-serif;
@@ -199,8 +200,11 @@ div.main section > div {
   margin-top: 20px;
 }
 #contact {
-  background-image: url(../imgs/pexels-photo-11968550Redone_50_1.jpg);
-  padding-top: 30vmin;
+  background-image: url(../imgs/pexels-photo-11968550Redone_50_2.jpg);
+  padding-top: 28vmin;
+}
+.contactLogo {
+  height: 15vmin;
 }
 
 /*media queries to improve experience on smaller devices*/
@@ -334,11 +338,17 @@ div.main section > div {
   .carousel-inner {
     height: 30vmin;
   }
+  #contact {
+    padding-top: 18vmin;
+  }
 }
 @media (max-height: 220px) {
   hr {
     margin-top: 0px;
     margin-bottom: 2px;
+  }
+  #contact {
+    padding-top: 18vmin;
   }
 }
 .loadlogo {
@@ -361,13 +371,17 @@ div.main section > div {
   height: 150px;
   margin: -75px 0 0 -75px;
   border-radius: 50%;
-  border: 5px solid transparent;
-  border-top-color: #555;
+  /*border: 5px solid transparent;*/
+  /*border-top-color: #555;*/
   z-index: 1500;
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
 }
-#loader:before {
+#loader img {
+  width: 100%;
+  height: 100%;
+}
+/*#loader:before {
     content: "";
     position: absolute;
     top: 5px;
@@ -392,7 +406,7 @@ div.main section > div {
     border-top-color: #999;
     -webkit-animation: spin 1.5s linear infinite;
     animation: spin 1.5s linear infinite;
-}
+}*/
 @-webkit-keyframes spin {
   0% {
     -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
