@@ -216,6 +216,9 @@ div.main section > div {
   .musicImgBand {
     max-width: 50%;
   }
+  #band {
+    background-position: bottom right;
+  }
 }
 @media (max-width: 600px) {
   #band p {
