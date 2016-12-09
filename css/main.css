@@ -327,7 +327,7 @@ div.main section > div {
     padding-left: 10px;
   }
   .musicImg {
-    width: 40vmin;
+    width: 20vmin;
   }
   .musicImgBand {
     width: 20vmin;
@@ -347,9 +347,6 @@ div.main section > div {
   }
 }
 @media (max-height: 432px) {
-  .musicImg {
-    width: 20vmin;
-  }
   .musicImgBand {
     width: 20vmin;
   }
