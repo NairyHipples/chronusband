@@ -15,15 +15,10 @@
 */
 
 /*basic text properties for the entire page*/
-html {
-}
-
 body {
   font-size: 3vmin;
   color:#eee;
   font-family: 'Julius Sans One', sans-serif;
-  overflow-y: scroll;
-  -webkit-overflow-scrolling:touch;
 }
 h1 {
   font-size: 5vmin;
