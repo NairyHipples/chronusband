@@ -16,6 +16,6 @@ $(document).ready(function() {
 
  if (window.mobilecheck() == true) {
   var newHeight = $(window).height() + 70;
-  $("#home, #band, #contact").css("height", newHeight);
+  $("#home, #contact").css("height", newHeight);
  }
 }); // end DOC ready
