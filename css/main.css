@@ -347,9 +347,6 @@ div.main section > div {
   }
 }
 @media (max-height: 432px) {
-  .musicImgBand {
-    width: 20vmin;
-  }
   .carousel-inner {
     height: 30vmin;
   }
