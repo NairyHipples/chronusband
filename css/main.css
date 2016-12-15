@@ -445,7 +445,7 @@ div.main section > div {
     font-size: 4vmin;
   }
 
-  #bandNav, #contactNav {
+  #musicNav, #bandNav, #contactNav {
     font-size: 4vmin;
   }
   .karin {
@@ -698,21 +698,24 @@ div.main section > div {
     padding-top: 20vmin;
   }
 }
-@media (max-height: 512px) {
-  .karin2 {
-    margin-top: 0px;
-    margin-bottom: 0px;
+@media (max-height: 512px) and (min-width: 771px) {
+  h1 {
+    font-size: 3.5vmin;
   }
-  #tidal {
-    height: 30px;
+  h2 {
+    font-size: 20px;
   }
-  .social2 {
-    height: 10.5vmin;
-    padding-top: 20px;
-    padding-left: 10px;
+  .musicImgBand2 {
+    width: 37vmin;
+  }
+  .alignRight {
+    font-size: 9px;
+  }
+  .musicImgBand3 {
+    width: 19vmin;
   }
 }
-@media (max-height: 492px) {
+@media (max-height: 512px) {
   .karin2 {
     margin-top: 10px;
     margin-bottom: 0px;
@@ -762,7 +765,20 @@ div.main section > div {
     margin-top: 5px;
   }
   #home p {
-    font-size: 12px;
+    font-size: 6px;
+  }
+  .media-body, .media-left, .media-right {
+    vertical-align: top;
+  }
+  .partialHeader {
+    margin-top: 8px;
+  }
+  .h1, .h2, .h3, h1, h2, h3 {
+    margin-top: 0px;
+    margin-bottom: 5px;
+  }
+  .contactLogo {
+    margin-top: 6vmin;
   }
 }
 @media (max-height: 220px) {
