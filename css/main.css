@@ -354,6 +354,9 @@ div.main section > div {
   }
 }
 @media (max-width: 767px) {
+  #home {
+    background-image: url(../imgs/Chronus-reverse-web2_80_2.jpg);
+  }
   #band {
     height: 165vmin;
     background-position: bottom right;
