@@ -691,6 +691,9 @@ div.main section > div {
     margin-top: 0px;
     margin-bottom: 0px;
   }
+  #tidal {
+    height: 30px;
+  }
   .social2 {
     height: 10.5vmin;
     padding-top: 20px;
@@ -706,9 +709,12 @@ div.main section > div {
     margin-top: 10px;
   }
   .social2 {
-    height: 9vmin;
+    height: 8vmin;
     padding-top: 10px;
     padding-left: 10px;
+  }
+  #tidal {
+    height: 20px;
   }
   .musicImg {
     width: 20vmin;
