@@ -384,6 +384,10 @@ div.main section > div {
   .social1 {
     height: 5vmin;
   }
+  .listenNow {
+    width: 48vmin;
+    font-size: 5vmin;
+  }
 }
 @media (max-width: 699px) {
   .social2 {
