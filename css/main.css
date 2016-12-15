@@ -576,7 +576,7 @@ div.main section > div {
 }
 @media (max-width: 350px) {
   #band {
-    height: 290vmin;
+    height: 250vmin;
   }
   .social1 {
     height: 11vmin;
@@ -620,6 +620,9 @@ div.main section > div {
   }
   .social1 {
     height: 15vmin;
+  }
+  #band {
+    height: 290vmin;
   }
 }
 @media (max-width: 272px) {
