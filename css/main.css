@@ -38,13 +38,40 @@ footer p {
 .musicImg {
   margin-top: 2vmin;
   display: inline-block;
-  width: 50vmin;
+  width: 43vmin;
+}
+.musicImg2 {
+  width: 7vmin;
+  margin-left: 0px;
+  display: inline-block;
+}
+.media {
+  width: 41vmin;
+  margin: 0 auto;
+}
+.media-body {
+  width: 32vmin;
+  margin-left: 30px;
+}
+.media-body, .media-left, .media-right {
+    vertical-align: bottom;
 }
 .musicImgBand {
   display: inline-block;
   width: 30vmin;
   margin-bottom: 20px;
 }
+.musicImgBand2 {
+  display: inline-block;
+  width: 50vmin;
+  margin-bottom: 20px;
+}
+.musicImgBand3 {
+  display: inline-block;
+  width: 27vmin;
+  margin-bottom: 20px;
+}
+
 .bandImg {
   width: 300px;
   display: inline-block;
@@ -55,7 +82,9 @@ footer p {
   color: #fff;
   cursor: pointer;
 }
-
+.glyphicon {
+  color: #fff;
+}
 /*general style for each section*/
 div.main section {
   height:100vh;
@@ -101,6 +130,7 @@ div.main section > div {
   left:30vw;
   right:30vw;*/
 }
+#musicNav,
 #bandNav,
 #contactNav {
   font-size: 2.5vmin;
@@ -120,20 +150,51 @@ div.main section > div {
   padding-top: 5px;
   padding-bottom: 5px;
 }
-.social {
-  width: 6vmin;
+.social1 {
+  height: 7vmin;
   padding-left: 15px;
+  padding-right: 5px;
+  padding-top: 40px;
   display: inline-block;
 }
 .social2 {
-  width: 6vmin;
-  padding-left: 15px;
+  height: 76px;
+  padding-left: 20px;
   padding-right: 5px;
+  padding-top: 40px;
   display: inline-block;
 }
+#tidal {
+  height: 56px;
+  padding-left: 14px;
+}
+#tidal2 {
+  height: 45px;
+}
+#youtube2 {
+  padding-left
+}
+.first {
+  padding-left: 0 !important;
+}
+.social3 {
+  height: 60px;
+  padding-left: 15px;
+  padding-right: 5px;
+  padding-top: 30px;
+  display: inline-block;
+}
+/*.youTube {
+  width: 6.2vmin;
+}*/
 .karin2 {
   margin-top: 2vmin;
   margin-bottom: 2vmin;
+}
+.karin3 {
+  margin-top: 0px;
+  padding-top: 0px;
+  margin-bottom: 20px;
 }
 .btn-default {
   margin-top: 3vmin;
@@ -141,19 +202,45 @@ div.main section > div {
   width: 40vmin;
   font-size: 4vmin;
   color: #fff;
-  background-color: #000;
+  background-color: transparent;
   border: 1px solid #fff;
   border-radius: 10vmin;
+  box-shadow: inset 0px 0px 100px 3px rgba(0,0,0,1);
 }
 .btn-default:hover {
   color: #000;
-  background-color: #fff;
+  background-color: transparent;
+  box-shadow: inset 0px 0px 100px 3px rgba(255,255,255,1);
   border: 1px solid #fff;
 }
 .btn-default:focus {
   color: #fff;
-  background-color: #000;
+  background-color: transparent;
   border: 1px solid #fff;
+}
+.listenNow {
+  margin-top: 1vmin;
+  font-family: 'Julius Sans One', sans-serif;
+  width: 33vmin;
+  font-size: 3vmin;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 10vmin;
+  box-shadow: inset 0px 0px 100px 3px rgba(90,140,73,1);
+}
+.listenNow:hover {
+  color: #fff;
+  background-color: transparent;
+  box-shadow: inset 0px 0px 100px 3px rgba(118,217,85,1);
+  border: 1px solid #fff;
+}
+.listenNow:focus {
+  color: #fff;
+  background-color: transparent;
+}
+.glyphicon-music {
+  top: 4px;
 }
 .navbar-inverse .navbar-nav>li>a {
   color: #fff;
@@ -175,6 +262,12 @@ div.main section > div {
 .alignLeft {
   text-align: left;
 }
+.alignRight {
+  font-family: 'Lato', sans-serif;
+  text-align: right;
+  font-size: 14px;
+  font-style: italic;
+}
 .chronusEmail {
   font-size: 5vmin;
 }
@@ -183,12 +276,26 @@ div.main section > div {
   background-image, so we use their ids to assign each image
 */
 #home {
-  background-image: url(../imgs/Anfal_ShamsudeenRedone_50.jpg);
+  background-image: url(../imgs/Chronus-reverse-web2_100.jpg);
+  background-position: center center;
+}
+
+#music {
+  background-image: url(../imgs/pexels-photo-92976_90_2.jpg);
+  background-position: center top;
+}
+.musicP {
+  font-size: 15px;
+  text-align: center;
 }
 
 #band {
   background-color: #000;
   background-image: url(../imgs/pexels-photo-14676_90_4.png);
+}
+#band p a {
+  text-decoration: none;
+  color: orange;
 }
 #myCarousel {
   margin-bottom: 25px;
@@ -197,7 +304,7 @@ div.main section > div {
   margin-top: 20px;
 }
 #contact {
-  background-image: url(../imgs/pexels-photo-11968550Redone_50_6.jpg);
+  background-image: url(../imgs/pexels-photo-11968550Redone_80_4.jpg);
   padding-top: 28vmin;
   text-shadow: 0px 0px 10px #000;
 }
@@ -206,8 +313,61 @@ div.main section > div {
 }
 
 /*media queries to improve experience on smaller devices*/
+
+@media (max-width: 991px){
+  h1 {
+    font-size: 4.5vmin;
+  }
+  .social1 {
+    padding-top: 0px;
+    height: 2vmin;
+  }
+  .social2 {
+    height: 36px;
+    padding-top: 10px;
+  }
+  #tidal {
+    height: 23px;
+  }
+  .musicImgBand3 {
+    width: 23vmin;
+  }
+  .latoSmall {
+    font-size: 1.7vmin;
+  }
+}
+@media (max-width: 770px) {
+  #home {
+    background-image: url(../imgs/Chronus-reverse-web2_80_2.jpg);
+  }
+  .social2 {
+    padding-left: 13px;
+  }
+  #amazon {
+  }
+  #spotify {
+    padding-left: 13px;
+  }
+  #tidal {
+    padding-left: 5px;
+  }
+  #youtube {
+    padding-left: 13px;
+    padding-right: 0px;
+  }
+}
 @media (max-width: 767px) {
+  #home {
+    background-image: url(../imgs/Chronus-reverse-web2_50_2.jpg);
+  }
+  #music {
+    background-image: url(../imgs/pexels-photo-92976_50_2.jpg);
+    background-position: center bottom;
+    height: 180vmin;
+  }
   #band {
+    background-image: url(../imgs/pexels-photo-14676_90_4.jpg);
+    background-position: bottom right;
     height: 165vmin;
   }
   #band p {
@@ -216,8 +376,46 @@ div.main section > div {
   .musicImgBand {
     max-width: 50%;
   }
-  #band {
-    background-position: bottom right;
+  .musicImgBand3 {
+    width: 27vmin;
+  }
+  #music .latoSmall {
+    text-align: center;
+    font-size: 2.4vmin;
+  }
+  .marginTop {
+    margin-top: 80px;
+  }
+  #music p {
+    width: 70vmin;
+    margin: 0 auto;
+  }
+  .social1 {
+    height: 5vmin;
+  }
+  .listenNow {
+    width: 48vmin;
+    font-size: 5vmin;
+  }
+}
+@media (max-width: 699px) {
+  .social2 {
+    height: 51px;
+    padding-top: 24px;
+    padding-left: 22px;
+  }
+  #spotify {
+    padding-left: 19px;
+  }
+  #tidal {
+    padding-left: 0px;
+    height: 39px;
+  }
+  #youtube {
+    padding-left: 27px;
+  }
+  .social3 {
+    height: 66px;
   }
 }
 @media (max-width: 600px) {
@@ -226,6 +424,11 @@ div.main section > div {
   }
   #band {
     height: 160vmin;
+  }
+}
+@media (max-width: 593px) {
+  .social2 {
+    height: 45px;
   }
 }
 @media (max-width: 554px) {
@@ -241,11 +444,8 @@ div.main section > div {
   #band p {
     font-size: 4vmin;
   }
-  .band-a {
 
-  }
-
-  #bandNav, #contactNav {
+  #musicNav, #bandNav, #contactNav {
     font-size: 4vmin;
   }
   .karin {
@@ -261,9 +461,15 @@ div.main section > div {
     display: inline-block;
   }
   .social2 {
-    width: 9vmin;
-    padding-left: 10px;
+    height: 52px;
+    padding-left: 18px;
     display: inline-block;
+  }
+  #spotify {
+    padding-left: 0px;
+  }
+  #tidal {
+    padding-left: 14px;
   }
   .musicImg {
     display: inline-block;
@@ -282,15 +488,78 @@ div.main section > div {
     width: 30vmin;
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 526px) {
+  #music {
+    height: 210vmin;
+  }
+  #music .latoSmall {
+    font-size: 3vmin;
+  }
+  .glyphicon-music {
+    top: 1px;
+  }
+}
+@media (max-width: 480px) {
+  .media {
+    width: 50vmin;
+  }
+  .media-body {
+    width: 40vmin;
+  }
+  .latoSmall {
+    font-size: 2.5vmin;
+  }
+  .media-body, .media-left, .media-right {
+    vertical-align: top;
+  }
+}
+@media (max-width: 452px) {
   #contact {
     padding-top: 40vmin;
   }
   #band {
     height: 190vmin;
   }
+  .social1 {
+    height: 6vmin;
+  }
+  .social2 {
+    height: 45px;
+    padding-top: 25px;
+    padding-left: 24px;
+  }
+  #music .latoSmall {
+    font-size: 4vmin;
+  }
+  #music {
+    height: 250vmin;
+  }
+  .social3 {
+    height: 45px;
+    padding-top: 25px;
+    padding-left: 20px;
+  }
+  #tidal {
+    height: 35px;
+    padding-left: 14px;
+  }
+  #tidal2 {
+    height: 35px;
+    padding-left: 4px;
+  }
+  #youtube {
+    padding-left: 18px;
+  }
 }
-
+@media (max-width: 406px) {
+  #music {
+    height: 270vmin;
+  }
+  #tidal {
+    height: 35px;
+    padding-left: 8px;
+  }
+}
 @media (max-width: 400px) {
   .musicImg {
     display: inline-block;
@@ -301,12 +570,127 @@ div.main section > div {
     font-size: 5vmin;
   }
   #band {
-    height: 220vmin;
+    height: 230vmin;
+  }
+}
+@media (max-width: 373px) {
+  .social2 {
+    padding-left: 11px;
   }
 }
 @media (max-width: 366px) {
+  #music {
+    height: 290vmin;
+  }
+}
+@media (max-width: 350px) {
   #band {
-    height: 230vmin;
+    height: 250vmin;
+  }
+  .social1 {
+    height: 11vmin;
+    padding-top: 20px;
+  }
+}
+@media (max-width: 337px) {
+  .social2 {
+    height: 40px;
+  }
+}
+@media (max-width: 323px) {
+  h1 {
+    font-size: 8vmin;
+  }
+  #music {
+    height: 270vmin;
+  }
+}
+@media (max-width: 310px) {
+  .social2 {
+    height: 27px;
+    padding-top: 13px;
+  }
+  #tidal {
+    height: 20px;
+  }
+  #youtube {
+    padding-left: 11px;
+  }
+  #home .latoSmall {
+    font-size: 2.2vmin
+  }
+  .media-body {
+    width: 37vmin;
+  }
+}
+@media (max-width: 295px) {
+  #music {
+    height: 300vmin;
+  }
+  .social1 {
+    height: 15vmin;
+  }
+  #band {
+    height: 290vmin;
+  }
+}
+@media (max-width: 272px) {
+  #music {
+    height: 320vmin;
+  }
+}
+@media (max-width: 264px) {
+  h1 {
+    font-size: 7vmin;
+  }
+  .social2 {
+    padding-left: 2px;
+  }
+}
+@media (max-width: 243px) {
+  .social2 {
+    height: 24px;
+  }
+}
+@media (max-width: 229px) {
+  #music {
+    height: 400vmin;
+  }
+  #band {
+    height: 320vmin;
+  }
+  .social3 {
+    height: 50px;
+  }
+}
+@media (max-width: 210px) {
+  #music {
+    height: 500vmin;
+  }
+  .social3 {
+    height: 50px;
+    padding-left: 5px;
+  }
+  .musicP {
+    font-size: 10px;
+  }
+}
+@media (max-width: 191px) {
+  #music {
+    height: 500vmin;
+  }
+  .marginTop {
+    margin-top: 20px;
+  }
+  .alignRight {
+    font-size: 8px;
+  }
+  .social3 {
+    height: 50px;
+    padding-left: 5px;
+  }
+  .musicP {
+    font-size: 12px;
   }
 }
 @media (max-height: 550px) {
@@ -314,17 +698,38 @@ div.main section > div {
     padding-top: 20vmin;
   }
 }
-@media (max-height: 492px) {
+@media (max-height: 512px) and (min-width: 771px) {
+  h1 {
+    font-size: 3.5vmin;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  .musicImgBand2 {
+    width: 37vmin;
+  }
+  .alignRight {
+    font-size: 9px;
+  }
+  .musicImgBand3 {
+    width: 19vmin;
+  }
+}
+@media (max-height: 512px) {
   .karin2 {
-    margin-top: 0px;
+    margin-top: 10px;
     margin-bottom: 0px;
   }
   .btn-default {
     margin-top: 10px;
   }
   .social2 {
-    width: 10vmin;
+    height: 8vmin;
+    padding-top: 10px;
     padding-left: 10px;
+  }
+  #tidal {
+    height: 20px;
   }
   .musicImg {
     width: 20vmin;
@@ -360,7 +765,20 @@ div.main section > div {
     margin-top: 5px;
   }
   #home p {
-    font-size: 12px;
+    font-size: 6px;
+  }
+  .media-body, .media-left, .media-right {
+    vertical-align: top;
+  }
+  .partialHeader {
+    margin-top: 8px;
+  }
+  .h1, .h2, .h3, h1, h2, h3 {
+    margin-top: 0px;
+    margin-bottom: 5px;
+  }
+  .contactLogo {
+    margin-top: 6vmin;
   }
 }
 @media (max-height: 220px) {
