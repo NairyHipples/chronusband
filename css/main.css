@@ -402,8 +402,8 @@ div.main section > div {
 }
 @media (max-width: 770px) {
   #home {
-    background-image: url(../imgs/dying_star_5_100.jpg);
-    background-position: center bottom;
+    background-image: url(../imgs/dying_star_6_80.jpg);
+    background-position: center top;
   }
   .social2 {
     padding-left: 13px;
@@ -426,8 +426,8 @@ div.main section > div {
     display: block;
   }
   #home {
-    background-image: url(../imgs/dying_star_5_80.jpg);
-    background-position: center bottom;
+    background-image: url(../imgs/dying_star_6_80.jpg);
+    background-position: center top;
   }
   #music {
     background-image: url(../imgs/Chronus-reverse-web2_50_2.jpg);
