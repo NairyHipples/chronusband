@@ -286,11 +286,11 @@ div.main section > div {
 .lato {
   font-family: 'Lato', sans-serif;
 }
-.latoSmall {
+/*.latoSmall {
   font-family: 'Lato', sans-serif;
   font-size: 2vmin;
   font-weight: 100;
-}
+}*/
 .carousel-inner {
   height: 40vmin;
 }
@@ -356,6 +356,7 @@ div.main section > div {
   background-color: #000;
   background-image: url(../imgs/pexels-photo-14676_90_4.png);
   border-bottom: 1px solid #ED9507;
+  height: 120vmin;
 }
 #band p a {
   text-decoration: none;
@@ -396,9 +397,6 @@ div.main section > div {
   .musicImgBand3 {
     width: 23vmin;
   }
-  .latoSmall {
-    font-size: 1.7vmin;
-  }
 }
 @media (max-width: 770px) {
   #home {
@@ -434,13 +432,13 @@ div.main section > div {
     background-position: center bottom;
     height: 220vmin;
   }
+  #store {
+    height: 140vmin;
+  }
   #band {
     background-image: url(../imgs/pexels-photo-14676_90_4.jpg);
     background-position: bottom right;
     height: 165vmin;
-  }
-  #band p {
-    font-size: 3vmin;
   }
   .musicImgBand {
     max-width: 50%;
@@ -456,15 +454,14 @@ div.main section > div {
   .smallCenter {
     text-align: center;
   }
-  #music .latoSmall {
-    text-align: center;
-    font-size: 2.4vmin;
-  }
   .marginTop {
     margin-top: 60px;
   }
   .marginTop1 {
     margin-top: 0px;
+  }
+  .marginTop2 {
+    margin-top: 60px;
   }
   #music p {
     width: 70vmin;
@@ -506,11 +503,8 @@ div.main section > div {
 }
 @media (max-width: 600px) {
   #music {
-    height: 230vmin;
+    height: 250vmin;
 
-  }
-  #band p {
-    font-size: 3vmin;
   }
   #band {
     height: 160vmin;
@@ -519,6 +513,21 @@ div.main section > div {
 @media (max-width: 593px) {
   .social2 {
     height: 45px;
+  }
+  .marginTop {
+    margin-top: 0px;
+  }
+  .marginTop2 {
+    margin-top: 60px;
+  }
+  .storeImg3 {
+    width: 53vmin;
+  }
+  .storeImg1 {
+    width: 80vmin;
+  }
+  #store {
+    height: 200vmin;
   }
 }
 @media (max-width: 554px) {
@@ -531,10 +540,6 @@ div.main section > div {
   #band {
     height: 190vmin;
   }
-  #band p {
-    font-size: 4vmin;
-  }
-
   #storeNav, #musicNav, #bandNav, #contactNav {
     font-size: 4vmin;
   }
@@ -582,9 +587,6 @@ div.main section > div {
   #music {
     height: 250vmin;
   }
-  #music .latoSmall {
-    font-size: 3vmin;
-  }
   .glyphicon-music {
     top: 1px;
   }
@@ -594,6 +596,9 @@ div.main section > div {
   .storeP {
     font-size: 14px;
   }
+  .musicP {
+    font-size: 14px;
+  }
 }
 @media (max-width: 480px) {
   .media {
@@ -601,9 +606,6 @@ div.main section > div {
   }
   .media-body {
     width: 40vmin;
-  }
-  .latoSmall {
-    font-size: 4.5vmin;
   }
   .media-body, .media-left, .media-right {
     vertical-align: top;
@@ -626,9 +628,6 @@ div.main section > div {
     height: 45px;
     padding-top: 25px;
     padding-left: 24px;
-  }
-  #music .latoSmall {
-    font-size: 4vmin;
   }
   #music {
     height: 290vmin;
@@ -665,9 +664,6 @@ div.main section > div {
     width: 45vmin;
     margin-top: 5vmin
   }
-  #band p {
-    font-size: 5vmin;
-  }
   #band {
     height: 230vmin;
   }
@@ -681,6 +677,9 @@ div.main section > div {
   #music {
     height: 290vmin;
   }
+  #store {
+    height: 250vmin;
+  }
 }
 @media (max-width: 350px) {
   #band {
@@ -689,6 +688,9 @@ div.main section > div {
   .social1 {
     height: 11vmin;
     padding-top: 20px;
+  }
+  #music {
+    height: 330vmin;
   }
 }
 @media (max-width: 337px) {
@@ -715,16 +717,13 @@ div.main section > div {
   #youtube {
     padding-left: 11px;
   }
-  #home .latoSmall {
-    font-size: 2.2vmin
-  }
   .media-body {
     width: 37vmin;
   }
 }
 @media (max-width: 295px) {
   #music {
-    height: 330vmin;
+    height: 350vmin;
   }
   .social1 {
     height: 15vmin;
@@ -735,7 +734,15 @@ div.main section > div {
 }
 @media (max-width: 272px) {
   #music {
-    height: 340vmin;
+    height: 400vmin;
+  }
+  .musicP {
+    font-size: 11px;
+  }
+  .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9
+  {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 @media (max-width: 264px) {
@@ -753,25 +760,37 @@ div.main section > div {
   .social2 {
     height: 24px;
   }
-}
-@media (max-width: 229px) {
   #music {
-    height: 360vmin;
+    height: 430vmin;
   }
   #band {
     height: 320vmin;
   }
+}
+@media (max-width: 229px) {
+  #music {
+    height: 460vmin;
+  }
+  #band {
+    height: 350vmin;
+  }
   .social3 {
     height: 50px;
+  }
+  #store {
+    height: 320vmin;
   }
 }
 @media (max-width: 210px) {
   #music {
-    height: 410vmin;
+    height: 480vmin;
   }
   .social3 {
     height: 50px;
     padding-left: 5px;
+  }
+  #band {
+    height: 380vmin;
   }
 
 }
@@ -799,6 +818,9 @@ div.main section > div {
     font-size: 12px;
   }
   h2 {
+  }
+  #band {
+    height: 420vmin;
   }
 }
 @media (max-height: 550px) {
