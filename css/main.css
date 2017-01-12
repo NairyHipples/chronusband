@@ -387,7 +387,11 @@ div.main section > div {
 }
 
 /*media queries to improve experience on smaller devices*/
-
+@media (max-width: 1199px) and (max-height: 836px) {
+  #band {
+    height: 180vmin;
+  }
+}
 @media (max-width: 991px){
   h1 {
     font-size: 4.5vmin;
@@ -413,7 +417,7 @@ div.main section > div {
 }
 @media (max-width: 770px) {
   #home {
-    background-image: url(../imgs/dying_star_6_80.jpg);
+    background-image: url(../imgs/dying_star_6_80_G.jpg);
     background-position: center top;
   }
   .social2 {
@@ -437,11 +441,10 @@ div.main section > div {
     display: block;
   }
   #home {
-    background-image: url(../imgs/dying_star_6_80.jpg);
+    background-image: url(../imgs/dying_star_6_80_G.jpg);
     background-position: center top;
   }
   #music {
-    background-image: url(../imgs/Chronus-reverse-web2_50_2.jpg);
     background-position: center bottom;
     height: 220vmin;
   }
@@ -451,8 +454,6 @@ div.main section > div {
     height: 140vmin;
   }
   #band {
-    background-image: url(../imgs/pexels-photo-14676_80_4_G.jpg);
-    background-position: bottom right;
     height: 200vmin;
   }
   .musicImgBand {
@@ -861,7 +862,7 @@ div.main section > div {
     height: 480vmin;
   }
 }
-@media (max-height: 700px) {
+@media (max-height: 700px) and (min-width: 768px) {
   #music {
     height: 150vmin;
   }
@@ -872,7 +873,6 @@ div.main section > div {
     display: block;
   }
 }
-
 @media (max-height: 550px) {
   #band {
     height: 200vmin;
