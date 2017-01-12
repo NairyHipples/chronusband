@@ -23,18 +23,23 @@ body {
 h1 {
   font-size: 5vmin;
 }
+.homeText {
+  color: #E37315;
+  text-shadow: 0px 0px 10px #000;
+}
 footer p {
   font-size: 14px;
 }
 hr {
   display: none;
-  border-top: 1px solid #ED9507;
+  border-top: 1px solid #E37315;
 }
 h2 {
   font-weight: 800;
+  text-shadow: 0px 0px 10px #000;
 }
 .hrPost {
-  border-top: 1px solid #ED9507;
+  border-top: 1px solid #E37315;
 }
 .marginTop {
   margin-top: 70px;
@@ -76,7 +81,7 @@ h2 {
 }
 .musicImgBand2 {
   display: inline-block;
-  width: 30vmin;
+  width: 40vmin;
   margin-bottom: 20px;
 }
 .musicImgBand3 {
@@ -181,10 +186,10 @@ div.main section > div {
   padding-bottom: 5px;
 }
 .social1 {
-  height: 7vmin;
+  height: 3vmin;
   padding-left: 15px;
   padding-right: 5px;
-  padding-top: 40px;
+  padding-top: 0px;
   display: inline-block;
 }
 .social2 {
@@ -234,7 +239,7 @@ div.main section > div {
   font-weight: 900;
   color: #fff;
   background-color: #000;
-  border: 1px solid #ED9507;
+  border: 1px solid #E37315;
   border-radius: 0vmin;
   box-shadow: inset 0px 0px 100px 3px rgba(0,0,0,1);
 }
@@ -242,23 +247,23 @@ div.main section > div {
   color: #fff;
   font-weight: 400;
   background-color: #444;
-  border: 1px solid #ED9507;
+  border: 1px solid #E37315;
 
 }
 .btn-default:focus {
   color: #fff;
   background-color: #000;
-  border: 1px solid #ED9507;
+  border: 1px solid #E37315;
 }
 .listenNow, .buyNow {
+  width: 33vmin;
   margin-top: 1vmin;
   font-family: 'Julius Sans One', sans-serif;
-  width: 33vmin;
+  font-weight: 900;
   font-size: 3vmin;
   color: #fff;
-  font-weight: 900;
   background-color: #000;
-  border: 1px solid #ED9507;
+  border: 1px solid #E37315;
   border-radius: 0vmin;
   box-shadow: inset 0px 0px 100px 3px rgba(0,0,0,1);
 }
@@ -311,9 +316,9 @@ div.main section > div {
   background-image, so we use their ids to assign each image
 */
 #home {
-  background-image: url(../imgs/dying_star_4_80.jpg);
+  background-image: url(../imgs/dying_star_4_80_G.jpg);
   background-position: center bottom;
-  border-bottom: 1px solid #ED9507;
+  border-bottom: 1px solid #E37315;
 }
 #home h1 {
   margin-top: 50px;
@@ -321,12 +326,12 @@ div.main section > div {
 #store {
   background-image: url(../imgs/pexels-photo-92976_90_2.jpg);
   background-position: center top;
-  border-bottom: 1px solid #ED9507;
+  border-bottom: 1px solid #E37315;
 }
 #music {
-  background-image: url(../imgs/Chronus-reverse-web2_80_2.jpg);
+  background-image: url(../imgs/Chronus-reverse-web2_80_2_G.jpg);
   background-position: center top;
-  border-bottom: 1px solid #ED9507;
+  border-bottom: 1px solid #E37315;
   height: 130vmin;
 }
 .asap {
@@ -339,7 +344,7 @@ div.main section > div {
 .asap2 {
   font-family: 'Asap', sans-serif;
   font-weight: bolder;
-  color: #ED9507;
+  color: #E37315;
 }
 .musicP {
   font-family: 'Asap', sans-serif;
@@ -354,19 +359,23 @@ div.main section > div {
 
 #band {
   background-color: #000;
-  background-image: url(../imgs/pexels-photo-14676_90_4.png);
-  border-bottom: 1px solid #ED9507;
-  height: 120vmin;
+  background-image: url(../imgs/pexels-photo-14676_100_4_G.jpg);
+  background-position: bottom right;
+  border-bottom: 1px solid #E37315;
+  height: 150vmin;
 }
 #band p a {
   text-decoration: none;
-  color: orange;
+  color: #E37315;
 }
 #myCarousel {
   margin-bottom: 25px;
 }
 .band-a{
   margin-top: 20px;
+}
+.mobileHidden {
+  display: none;
 }
 #contact {
   background-image: url(../imgs/pexels-photo-11968550Redone_80_4.jpg);
@@ -395,8 +404,12 @@ div.main section > div {
     height: 23px;
   }
   .musicImgBand3 {
-    width: 23vmin;
+    width: 20vmin;
   }
+  #band {
+    height: 170vmin;
+  }
+
 }
 @media (max-width: 770px) {
   #home {
@@ -433,18 +446,26 @@ div.main section > div {
     height: 220vmin;
   }
   #store {
+    background-image: url(../imgs/pexels-photo-92976_40_2.jpg);
+    background-position: center bottom;
     height: 140vmin;
   }
   #band {
-    background-image: url(../imgs/pexels-photo-14676_90_4.jpg);
+    background-image: url(../imgs/pexels-photo-14676_80_4_G.jpg);
     background-position: bottom right;
-    height: 165vmin;
+    height: 200vmin;
   }
   .musicImgBand {
     max-width: 50%;
   }
   .musicImgBand3 {
     width: 27vmin;
+  }
+  .mobileHidden {
+    display: block;
+  }
+  .computerShow {
+    display: none;
   }
   .storeImg3 {
     width: 23vmin;
@@ -468,7 +489,7 @@ div.main section > div {
     margin: 0 auto;
   }
   .social1 {
-    height: 5vmin;
+    height: 3vmin;
   }
   .listenNow, .buyNow {
     width: 48vmin;
@@ -504,10 +525,9 @@ div.main section > div {
 @media (max-width: 600px) {
   #music {
     height: 250vmin;
-
   }
   #band {
-    height: 160vmin;
+    height: 220vmin;
   }
 }
 @media (max-width: 593px) {
@@ -538,7 +558,7 @@ div.main section > div {
     font-size: 26px;
   }
   #band {
-    height: 190vmin;
+    height: 230vmin;
   }
   #storeNav, #musicNav, #bandNav, #contactNav {
     font-size: 4vmin;
@@ -619,7 +639,7 @@ div.main section > div {
     padding-top: 40vmin;
   }
   #band {
-    height: 190vmin;
+    height: 240vmin;
   }
   .social1 {
     height: 6vmin;
@@ -649,6 +669,14 @@ div.main section > div {
     padding-left: 18px;
   }
 }
+@media (max-width: 420px) {
+  #band {
+    height: 260vmin;
+  }
+  .social1 {
+    height: 4vmin;
+  }
+}
 @media (max-width: 406px) {
   #music {
     /*height: 270vmin;*/
@@ -665,7 +693,7 @@ div.main section > div {
     margin-top: 5vmin
   }
   #band {
-    height: 230vmin;
+    height: 270vmin;
   }
 }
 @media (max-width: 373px) {
@@ -683,11 +711,10 @@ div.main section > div {
 }
 @media (max-width: 350px) {
   #band {
-    height: 250vmin;
+    height: 290vmin;
   }
   .social1 {
-    height: 11vmin;
-    padding-top: 20px;
+    height: 4vmin;
   }
   #music {
     height: 330vmin;
@@ -703,6 +730,9 @@ div.main section > div {
     font-size: 8vmin;
   }
   #music {
+    height: 320vmin;
+  }
+  #band {
     height: 320vmin;
   }
 }
@@ -726,15 +756,18 @@ div.main section > div {
     height: 350vmin;
   }
   .social1 {
-    height: 15vmin;
+    height: 5vmin;
   }
   #band {
-    height: 290vmin;
+    height: 330vmin;
   }
 }
 @media (max-width: 272px) {
   #music {
     height: 400vmin;
+  }
+  #band {
+    height: 350vmin;
   }
   .musicP {
     font-size: 11px;
@@ -764,7 +797,7 @@ div.main section > div {
     height: 430vmin;
   }
   #band {
-    height: 320vmin;
+    height: 390vmin;
   }
 }
 @media (max-width: 229px) {
@@ -772,7 +805,7 @@ div.main section > div {
     height: 460vmin;
   }
   #band {
-    height: 350vmin;
+    height: 420vmin;
   }
   .social3 {
     height: 50px;
@@ -790,9 +823,14 @@ div.main section > div {
     padding-left: 5px;
   }
   #band {
-    height: 380vmin;
+    height: 450vmin;
   }
 
+}
+@media (max-width: 195px) {
+  #band {
+    height: 480vmin;
+  }
 }
 @media (max-width: 191px) {
   #music {
@@ -820,15 +858,33 @@ div.main section > div {
   h2 {
   }
   #band {
-    height: 420vmin;
+    height: 480vmin;
   }
 }
+@media (max-height: 700px) {
+  #music {
+    height: 150vmin;
+  }
+  .computerShow {
+    display: none;
+  }
+  .mobileHidden {
+    display: block;
+  }
+}
+
 @media (max-height: 550px) {
+  #band {
+    height: 200vmin;
+  }
   #contact {
     padding-top: 20vmin;
   }
+  .marginTop {
+    margin-top: 0px;
+  }
 }
-@media (max-height: 512px) and (min-width: 771px) {
+@media (max-height: 600px) and (min-width: 771px) {
   h1 {
     font-size: 3.5vmin;
   }
@@ -843,6 +899,13 @@ div.main section > div {
   }
   .musicImgBand3 {
     width: 19vmin;
+  }
+  .social2 {
+    height: 60px;
+    padding-left: 1px;
+    padding-right: 5px;
+    padding-top: 40px;
+    display: inline-block;
   }
 }
 @media (max-height: 512px) {
@@ -885,6 +948,12 @@ div.main section > div {
   .carousel-inner {
     height: 30vmin;
   }
+  #music {
+    height: 180vmin;
+  }
+  #store {
+    height: 120vmin;
+  }
   #contact {
     padding-top: 18vmin;
   }
@@ -896,6 +965,9 @@ div.main section > div {
   }
   #home p {
     font-size: 6px;
+  }
+  #band {
+    height: 230vmin;
   }
   .media-body, .media-left, .media-right {
     vertical-align: top;
