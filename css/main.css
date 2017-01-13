@@ -1,4 +1,4 @@
-@import 'https://fonts.googleapis.com/css?family=Abril+Fatface|Averia+Sans+Libre|Covered+By+Your+Grace|Julius+Sans+One|Lato|Luckiest+Guy';
+@import 'https://fonts.googleapis.com/css?family=Abril+Fatface|Averia+Sans+Libre|Covered+By+Your+Grace|Julius+Sans+One|Lato|Luckiest+Guy|Asap ';
 /*
   CSS3
 
@@ -23,8 +23,26 @@ body {
 h1 {
   font-size: 5vmin;
 }
+.homeText {
+  color: #E37315;
+  text-shadow: 0px 0px 10px #000;
+}
 footer p {
   font-size: 14px;
+}
+hr {
+  display: none;
+  border-top: 1px solid #E37315;
+}
+h2 {
+  font-weight: 800;
+  text-shadow: 0px 0px 10px #000;
+}
+.hrPost {
+  border-top: 1px solid #E37315;
+}
+.marginTop {
+  margin-top: 70px;
 }
 /*which means we need a clearfix*/
 .clearFix {
@@ -47,7 +65,7 @@ footer p {
 }
 .media {
   width: 41vmin;
-  margin: 0 auto;
+  margin: 6px auto;
 }
 .media-body {
   width: 32vmin;
@@ -63,7 +81,7 @@ footer p {
 }
 .musicImgBand2 {
   display: inline-block;
-  width: 50vmin;
+  width: 40vmin;
   margin-bottom: 20px;
 }
 .musicImgBand3 {
@@ -71,7 +89,19 @@ footer p {
   width: 27vmin;
   margin-bottom: 20px;
 }
-
+.storeImg1 {
+  display: inline-block;
+  width: 50vmin;
+}
+.storeImg2 {
+  display: inline-block;
+  height: 40px;
+}
+.storeImg3 {
+  display: inline-block;
+  width: 23vmin;
+  margin-top: 19px;
+}
 .bandImg {
   width: 300px;
   display: inline-block;
@@ -130,6 +160,11 @@ div.main section > div {
   left:30vw;
   right:30vw;*/
 }
+#storeNav {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 2.5vmin;
+}
 #musicNav,
 #bandNav,
 #contactNav {
@@ -151,10 +186,10 @@ div.main section > div {
   padding-bottom: 5px;
 }
 .social1 {
-  height: 7vmin;
+  height: 3vmin;
   padding-left: 15px;
   padding-right: 5px;
-  padding-top: 40px;
+  padding-top: 0px;
   display: inline-block;
 }
 .social2 {
@@ -175,7 +210,7 @@ div.main section > div {
   padding-left
 }
 .first {
-  padding-left: 0 !important;
+  padding-left: 20px;
 }
 .social3 {
   height: 60px;
@@ -188,7 +223,7 @@ div.main section > div {
   width: 6.2vmin;
 }*/
 .karin2 {
-  margin-top: 2vmin;
+  margin-top: 0vmin;
   margin-bottom: 2vmin;
 }
 .karin3 {
@@ -201,45 +236,51 @@ div.main section > div {
   font-family: 'Julius Sans One', sans-serif;
   width: 40vmin;
   font-size: 4vmin;
+  font-weight: 900;
   color: #fff;
-  background-color: transparent;
-  border: 1px solid #fff;
-  border-radius: 10vmin;
+  background-color: #000;
+  border: 1px solid #E37315;
+  border-radius: 0vmin;
   box-shadow: inset 0px 0px 100px 3px rgba(0,0,0,1);
 }
 .btn-default:hover {
-  color: #000;
-  background-color: transparent;
-  box-shadow: inset 0px 0px 100px 3px rgba(255,255,255,1);
-  border: 1px solid #fff;
+  color: #fff;
+  font-weight: 400;
+  background-color: #444;
+  border: 1px solid #E37315;
+
 }
 .btn-default:focus {
   color: #fff;
-  background-color: transparent;
-  border: 1px solid #fff;
+  background-color: #000;
+  border: 1px solid #E37315;
 }
-.listenNow {
+.listenNow, .buyNow {
+  width: 33vmin;
   margin-top: 1vmin;
   font-family: 'Julius Sans One', sans-serif;
-  width: 33vmin;
+  font-weight: 900;
   font-size: 3vmin;
   color: #fff;
-  background-color: transparent;
-  border: 1px solid #fff;
-  border-radius: 10vmin;
+  background-color: #000;
+  border: 1px solid #E37315;
+  border-radius: 0vmin;
   box-shadow: inset 0px 0px 100px 3px rgba(0,0,0,1);
 }
-.listenNow:hover {
-  color: #000;
-  background-color: transparent;
-  box-shadow: inset 0px 0px 100px 3px rgba(255,255,255,1);
-  border: 1px solid #fff;
+.listenNow:hover, .buyNow:hover {
+  color: #fff;
+  font-weight: 400;
+  background-color: #444;
+
 }
-.listenNow:focus {
+.listenNow:focus, .buyNow:focus {
   color: #fff;
   background-color: transparent;
 }
 .glyphicon-music {
+  top: 4px;
+}
+.glyphicon-shopping-cart {
   top: 4px;
 }
 .navbar-inverse .navbar-nav>li>a {
@@ -251,11 +292,11 @@ div.main section > div {
 .lato {
   font-family: 'Lato', sans-serif;
 }
-.latoSmall {
+/*.latoSmall {
   font-family: 'Lato', sans-serif;
   font-size: 2vmin;
   font-weight: 100;
-}
+}*/
 .carousel-inner {
   height: 40vmin;
 }
@@ -276,32 +317,69 @@ div.main section > div {
   background-image, so we use their ids to assign each image
 */
 #home {
-  background-image: url(../imgs/Chronus-reverse-web2_100.jpg);
-  background-position: center center;
+  background-image: url(../imgs/dying_star_4_80_G.jpg);
+  background-position: center bottom;
+  border-bottom: 1px solid #E37315;
 }
-
-#music {
+#home h1 {
+  margin-top: 50px;
+}
+#spotify {
+  padding-left: 0px;
+}
+#store {
   background-image: url(../imgs/pexels-photo-92976_90_2.jpg);
   background-position: center top;
+  border-bottom: 1px solid #E37315;
+}
+#music {
+  background-image: url(../imgs/Chronus-reverse-web2_80_2_G.jpg);
+  background-position: center top;
+  border-bottom: 1px solid #E37315;
+  height: 130vmin;
+}
+.asap {
+  font-family: 'Asap', sans-serif;
+}
+.asap1 {
+  font-family: 'Asap', sans-serif;
+  font-weight: bolder;
+}
+.asap2 {
+  font-family: 'Asap', sans-serif;
+  font-weight: bolder;
+  color: #E37315;
 }
 .musicP {
-  font-size: 15px;
+  font-family: 'Asap', sans-serif;
+  font-size: 17px;
   text-align: center;
+  margin-bottom: 50px;
+}
+.storeP {
+  font-family: 'Asap', sans-serif;
+  font-size: 17px;
 }
 
 #band {
   background-color: #000;
-  background-image: url(../imgs/pexels-photo-14676_90_4.png);
+  background-image: url(../imgs/pexels-photo-14676_100_4_G.jpg);
+  background-position: bottom right;
+  border-bottom: 1px solid #E37315;
+  height: 150vmin;
 }
 #band p a {
   text-decoration: none;
-  color: orange;
+  color: #E37315;
 }
 #myCarousel {
   margin-bottom: 25px;
 }
 .band-a{
   margin-top: 20px;
+}
+.mobileHidden {
+  display: none;
 }
 #contact {
   background-image: url(../imgs/pexels-photo-11968550Redone_80_4.jpg);
@@ -313,8 +391,29 @@ div.main section > div {
 }
 
 /*media queries to improve experience on smaller devices*/
-
-@media (max-width: 991px){
+@media (max-width: 1199px) and (max-height: 836px) {
+  #band {
+    height: 180vmin;
+  }
+}
+@media (max-width: 1080px) and (max-height: 800px) {
+  h1 {
+    font-size: 3vmin;
+  }
+}
+@media (min-width: 992px) and (max-height: 823px) {
+  .social2 {
+    height: 50px;
+    padding-top: 21px;
+  }
+  .musicImg {
+    width: 35vmin;
+  }
+}
+@media (max-width: 991px) {
+  .musicImg {
+    width: 35vmin;
+  }
   h1 {
     font-size: 4.5vmin;
   }
@@ -323,30 +422,51 @@ div.main section > div {
     height: 2vmin;
   }
   .social2 {
-    height: 36px;
-    padding-top: 10px;
+    height: 40px;
+    padding-top: 16px;
+  }
+  #spotify {
+    padding-left: 0px;
   }
   #tidal {
     height: 23px;
   }
   .musicImgBand3 {
-    width: 23vmin;
+    width: 20vmin;
   }
-  .latoSmall {
-    font-size: 1.7vmin;
+  #band {
+    height: 180vmin;
+  }
+
+}
+@media (max-width: 991px) and (max-height: 600px) {
+  #store {
+    height: 110vmin;
+  }
+  .marginTop {
+    margin-top: 10px;
+  }
+  .storeImg1 {
+    display: inline-block;
+    width: 35vmin;
   }
 }
 @media (max-width: 770px) {
   #home {
-    background-image: url(../imgs/Chronus-reverse-web2_80_2.jpg);
+    background-image: url(../imgs/dying_star_6_80_G.jpg);
+    background-position: center top;
   }
   .social2 {
     padding-left: 13px;
+    margin-top: 0px;
+  }
+  #home h1 {
+    margin-top: 20px;
   }
   #amazon {
   }
   #spotify {
-    padding-left: 13px;
+    padding-left: 0px;
   }
   #tidal {
     padding-left: 5px;
@@ -357,21 +477,24 @@ div.main section > div {
   }
 }
 @media (max-width: 767px) {
+  hr {
+    display: block;
+  }
   #home {
-    background-image: url(../imgs/Chronus-reverse-web2_50_2.jpg);
+    background-image: url(../imgs/dying_star_6_80_G.jpg);
+    background-position: center top;
   }
   #music {
-    background-image: url(../imgs/pexels-photo-92976_50_2.jpg);
     background-position: center bottom;
-    height: 180vmin;
+    height: 220vmin;
+  }
+  #store {
+    background-image: url(../imgs/pexels-photo-92976_40_2.jpg);
+    background-position: center bottom;
+    height: 140vmin;
   }
   #band {
-    background-image: url(../imgs/pexels-photo-14676_90_4.jpg);
-    background-position: bottom right;
-    height: 165vmin;
-  }
-  #band p {
-    font-size: 3vmin;
+    height: 200vmin;
   }
   .musicImgBand {
     max-width: 50%;
@@ -379,23 +502,45 @@ div.main section > div {
   .musicImgBand3 {
     width: 27vmin;
   }
-  #music .latoSmall {
+  .mobileHidden {
+    display: block;
+  }
+  .computerShow {
+    display: none;
+  }
+  .storeImg3 {
+    width: 23vmin;
+    margin-top: 19px;
+    margin-bottom: 20px;
+  }
+  .smallCenter {
     text-align: center;
-    font-size: 2.4vmin;
   }
   .marginTop {
-    margin-top: 80px;
+    margin-top: 60px;
+  }
+  .marginTop1 {
+    margin-top: 0px;
+  }
+  .marginTop2 {
+    margin-top: 60px;
   }
   #music p {
     width: 70vmin;
     margin: 0 auto;
   }
   .social1 {
-    height: 5vmin;
+    height: 3vmin;
   }
-  .listenNow {
+  .listenNow, .buyNow {
     width: 48vmin;
     font-size: 5vmin;
+  }
+  .musicP {
+    font-size: 19px;
+  }
+  .storeP {
+    font-size: 19px;
   }
 }
 @media (max-width: 699px) {
@@ -418,17 +563,40 @@ div.main section > div {
     height: 66px;
   }
 }
-@media (max-width: 600px) {
-  #band p {
-    font-size: 3vmin;
+@media (min-width: 601px) and (max-height: 508px) {
+  #music {
+    height: 260vmin;
   }
   #band {
-    height: 160vmin;
+    height: 220vmin;
+  }
+}
+@media (max-width: 600px) {
+  #music {
+    height: 250vmin;
+  }
+  #band {
+    height: 220vmin;
   }
 }
 @media (max-width: 593px) {
   .social2 {
     height: 45px;
+  }
+  .marginTop {
+    margin-top: 0px;
+  }
+  .marginTop2 {
+    margin-top: 60px;
+  }
+  .storeImg3 {
+    width: 53vmin;
+  }
+  .storeImg1 {
+    width: 80vmin;
+  }
+  #store {
+    height: 200vmin;
   }
 }
 @media (max-width: 554px) {
@@ -439,13 +607,9 @@ div.main section > div {
     font-size: 26px;
   }
   #band {
-    height: 190vmin;
+    height: 230vmin;
   }
-  #band p {
-    font-size: 4vmin;
-  }
-
-  #musicNav, #bandNav, #contactNav {
+  #storeNav, #musicNav, #bandNav, #contactNav {
     font-size: 4vmin;
   }
   .karin {
@@ -490,13 +654,19 @@ div.main section > div {
 }
 @media (max-width: 526px) {
   #music {
-    height: 210vmin;
-  }
-  #music .latoSmall {
-    font-size: 3vmin;
+    height: 250vmin;
   }
   .glyphicon-music {
     top: 1px;
+  }
+  .glyphicon-shopping-cart {
+    top: 1px;
+  }
+  .storeP {
+    font-size: 14px;
+  }
+  .musicP {
+    font-size: 14px;
   }
 }
 @media (max-width: 480px) {
@@ -506,11 +676,11 @@ div.main section > div {
   .media-body {
     width: 40vmin;
   }
-  .latoSmall {
-    font-size: 2.5vmin;
-  }
   .media-body, .media-left, .media-right {
     vertical-align: top;
+  }
+  h2 {
+    font-size: 6vmin;
   }
 }
 @media (max-width: 452px) {
@@ -518,7 +688,7 @@ div.main section > div {
     padding-top: 40vmin;
   }
   #band {
-    height: 190vmin;
+    height: 240vmin;
   }
   .social1 {
     height: 6vmin;
@@ -528,11 +698,8 @@ div.main section > div {
     padding-top: 25px;
     padding-left: 24px;
   }
-  #music .latoSmall {
-    font-size: 4vmin;
-  }
   #music {
-    height: 250vmin;
+    height: 290vmin;
   }
   .social3 {
     height: 45px;
@@ -551,9 +718,17 @@ div.main section > div {
     padding-left: 18px;
   }
 }
+@media (max-width: 420px) {
+  #band {
+    height: 260vmin;
+  }
+  .social1 {
+    height: 4vmin;
+  }
+}
 @media (max-width: 406px) {
   #music {
-    height: 270vmin;
+    /*height: 270vmin;*/
   }
   #tidal {
     height: 35px;
@@ -566,11 +741,8 @@ div.main section > div {
     width: 45vmin;
     margin-top: 5vmin
   }
-  #band p {
-    font-size: 5vmin;
-  }
   #band {
-    height: 230vmin;
+    height: 270vmin;
   }
 }
 @media (max-width: 373px) {
@@ -582,33 +754,37 @@ div.main section > div {
   #music {
     height: 290vmin;
   }
+  #store {
+    height: 250vmin;
+  }
 }
 @media (max-width: 350px) {
   #band {
-    height: 250vmin;
+    height: 290vmin;
   }
   .social1 {
-    height: 11vmin;
-    padding-top: 20px;
+    height: 4vmin;
+    margin-top: 20px;
+  }
+  #music {
+    height: 330vmin;
   }
 }
-@media (max-width: 337px) {
-  .social2 {
-    height: 40px;
-  }
-}
+
 @media (max-width: 323px) {
   h1 {
     font-size: 8vmin;
   }
   #music {
-    height: 270vmin;
+    height: 320vmin;
+  }
+  #band {
+    height: 320vmin;
   }
 }
 @media (max-width: 310px) {
   .social2 {
-    height: 27px;
-    padding-top: 13px;
+    height: 16vmin;
   }
   #tidal {
     height: 20px;
@@ -616,32 +792,43 @@ div.main section > div {
   #youtube {
     padding-left: 11px;
   }
-  #home .latoSmall {
-    font-size: 2.2vmin
-  }
   .media-body {
     width: 37vmin;
   }
 }
 @media (max-width: 295px) {
   #music {
-    height: 300vmin;
+    height: 350vmin;
   }
   .social1 {
-    height: 15vmin;
+    height: 5vmin;
   }
   #band {
-    height: 290vmin;
+    height: 330vmin;
   }
 }
 @media (max-width: 272px) {
   #music {
-    height: 320vmin;
+    height: 400vmin;
+  }
+  #band {
+    height: 350vmin;
+  }
+  .musicP {
+    font-size: 11px;
+  }
+  .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9
+  {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 @media (max-width: 264px) {
   h1 {
     font-size: 7vmin;
+  }
+  h2 {
+    font-size: 15px;
   }
   .social2 {
     padding-left: 2px;
@@ -649,38 +836,56 @@ div.main section > div {
 }
 @media (max-width: 243px) {
   .social2 {
-    height: 24px;
+    height: 17vmin;
+  }
+  #music {
+    height: 430vmin;
+  }
+  #band {
+    height: 390vmin;
   }
 }
 @media (max-width: 229px) {
   #music {
-    height: 400vmin;
+    height: 460vmin;
   }
   #band {
-    height: 320vmin;
+    height: 420vmin;
   }
   .social3 {
     height: 50px;
   }
+  #store {
+    height: 320vmin;
+  }
 }
 @media (max-width: 210px) {
   #music {
-    height: 500vmin;
+    height: 480vmin;
   }
   .social3 {
     height: 50px;
     padding-left: 5px;
   }
-  .musicP {
-    font-size: 10px;
+  #band {
+    height: 450vmin;
+  }
+
+}
+@media (max-width: 195px) {
+  #band {
+    height: 480vmin;
   }
 }
 @media (max-width: 191px) {
   #music {
-    height: 500vmin;
+    height: 510vmin;
   }
   .marginTop {
     margin-top: 20px;
+  }
+  .marginTop1 {
+    margin-top: 0px;
   }
   .alignRight {
     font-size: 8px;
@@ -692,13 +897,27 @@ div.main section > div {
   .musicP {
     font-size: 12px;
   }
-}
-@media (max-height: 550px) {
-  #contact {
-    padding-top: 20vmin;
+  .storeP {
+    font-size: 12px;
+  }
+  h2 {
+  }
+  #band {
+    height: 480vmin;
   }
 }
-@media (max-height: 512px) and (min-width: 771px) {
+@media (max-height: 700px) and (min-width: 768px) {
+  #music {
+    height: 150vmin;
+  }
+  .computerShow {
+    display: none;
+  }
+  .mobileHidden {
+    display: block;
+  }
+}767 432
+@media (max-height: 600px) and (min-width: 771px) {
   h1 {
     font-size: 3.5vmin;
   }
@@ -714,6 +933,34 @@ div.main section > div {
   .musicImgBand3 {
     width: 19vmin;
   }
+  .social2 {
+    height: 60px;
+    padding-left: 1px;
+    padding-right: 5px;
+    padding-top: 40px;
+    display: inline-block;
+  }
+}
+@media (max-height: 550px) and (max-width: 452px){
+  #band {
+    height: 250vmin;
+  }
+  #contact {
+    padding-top: 20vmin;
+  }
+  .marginTop {
+    margin-top: 0px;
+  }
+}
+@media (max-height: 550px) and (max-width: 392px){
+  #band {
+    height: 328vmin;
+  }
+}
+@media (max-height: 432px) and (max-width: 452px){
+  #band {
+    height: 262vmin;
+  }
 }
 @media (max-height: 512px) {
   .karin2 {
@@ -721,12 +968,14 @@ div.main section > div {
     margin-bottom: 0px;
   }
   .btn-default {
-    margin-top: 10px;
+    margin-top: 30px;
+  }
+  #home h1 {
+    margin-top: 20px;
   }
   .social2 {
-    height: 8vmin;
-    padding-top: 10px;
-    padding-left: 10px;
+    height: 10vmin;
+    padding-top: 18px;
   }
   #tidal {
     height: 20px;
@@ -751,9 +1000,15 @@ div.main section > div {
     margin: 0px;
   }
 }
-@media (max-height: 432px) {
+@media (min-width: 767px) and (max-height: 432px) {
   .carousel-inner {
     height: 30vmin;
+  }
+  #music {
+    height: 180vmin;
+  }
+  #store {
+    height: 120vmin;
   }
   #contact {
     padding-top: 18vmin;
@@ -766,6 +1021,9 @@ div.main section > div {
   }
   #home p {
     font-size: 6px;
+  }
+  #band {
+    height: 330vmin;
   }
   .media-body, .media-left, .media-right {
     vertical-align: top;
