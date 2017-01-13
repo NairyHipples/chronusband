@@ -89,13 +89,13 @@ h2 {
   width: 27vmin;
   margin-bottom: 20px;
 }
-.storeImg1 {
-  display: inline-block;
-  width: 48vmin;
-}
 .storeImg2 {
   display: inline-block;
   height: 40px;
+}
+.storeImg1 {
+  display: inline-block;
+  width: 48vmin;
 }
 .storeImg3 {
   display: inline-block;
