@@ -89,13 +89,13 @@ h2 {
   width: 27vmin;
   margin-bottom: 20px;
 }
-.storeImg2 {
-  display: inline-block !important;
-  height: 40px !important;
-}
 .storeImg1 {
   display: inline-block;
-  width: 48vmin;
+  width: 50vmin;
+}
+.storeImg2 {
+  display: inline-block;
+  height: 40px;
 }
 .storeImg3 {
   display: inline-block;
@@ -271,7 +271,6 @@ div.main section > div {
   color: #fff;
   font-weight: 400;
   background-color: #444;
-
 }
 .listenNow:focus, .buyNow:focus {
   color: #fff;
