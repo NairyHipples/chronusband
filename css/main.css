@@ -598,6 +598,23 @@ div.main section > div {
   #home .social2 {
     padding-top: 16px;
   }
+  #home .musicImg {
+    width: 60vmin;
+  }
+  #home .homeText {
+    font-size: 10vmin;
+  }
+  #home .social2 {
+    height: 12vmin;
+    margin-top: 7px;
+    padding-top: 16px;
+    padding-left: 3px;
+  }
+  #home .btn-default {
+    margin-top: 10vmin;
+    width: 50vmin;
+    font-size: 7vmin;
+  }
 }
 @media (max-width: 350px) and (max-height: 950px) {
   #home .musicImg {
