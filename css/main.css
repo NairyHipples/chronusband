@@ -614,9 +614,12 @@ div.main section > div {
     margin-top: 20px;
   }
 }
-@media (max-width: 499px) and (max-height: 579px) {
+@media (max-width: 499px) and (max-height: 600px) {
   #home .musicImg {
-    /*width: 40vmin;*/
+    margin-top: 5vmin;
+  }
+  #home .social2 {
+    height: 12vmin;
   }
   #home .btn-default {
     width: 36vmin;
