@@ -39,6 +39,7 @@ h2 {
   text-shadow: 0px 0px 10px #000;
 }
 .hrPost {
+  margin-top: 70px;
   border-top: 1px solid #E37315;
 }
 .marginTop {
@@ -72,7 +73,11 @@ h2 {
   margin-left: 30px;
 }
 .media-body, .media-left, .media-right {
-    vertical-align: bottom;
+  vertical-align: bottom;
+}
+.gallery {
+  display: inline-block;
+  margin-top: 20px;
 }
 .musicImgBand {
   display: inline-block;
@@ -81,12 +86,20 @@ h2 {
 }
 .musicImgBand2 {
   display: inline-block;
-  width: 40vmin;
-  margin-bottom: 20px;
+  width: 35vmin;
+  margin-bottom: 100px;
 }
 .musicImgBand3 {
   display: inline-block;
   width: 27vmin;
+  margin-bottom: 20px;
+}
+#band .musicImgBand3 {
+  width: 20vmin;
+}
+.musicImgBand4 {
+  display: inline-block;
+  width: 28vmin;
   margin-bottom: 20px;
 }
 .storeImg1 {
@@ -193,7 +206,7 @@ div.main section > div {
   display: inline-block;
 }
 .social2 {
-  height: 76px;
+  height: 8vmin;
   padding-left: 20px;
   padding-right: 5px;
   padding-top: 40px;
@@ -271,7 +284,6 @@ div.main section > div {
   color: #fff;
   font-weight: 400;
   background-color: #444;
-
 }
 .listenNow:focus, .buyNow:focus {
   color: #fff;
@@ -309,6 +321,9 @@ div.main section > div {
   font-size: 14px;
   font-style: italic;
 }
+.alignCenter {
+  text-align: center;
+}
 .chronusEmail {
   font-size: 5vmin;
 }
@@ -325,7 +340,7 @@ div.main section > div {
   margin-top: 50px;
 }
 #spotify {
-  padding-left: 0px;
+  /*padding-left: 0px;*/
 }
 #store {
   background-image: url(../imgs/pexels-photo-92976_90_2.jpg);
@@ -358,19 +373,41 @@ div.main section > div {
 }
 .storeP {
   font-family: 'Asap', sans-serif;
-  font-size: 17px;
+  font-size: 2.1vmin;
 }
+.rowPost {}
 
 #band {
   background-color: #000;
   background-image: url(../imgs/pexels-photo-14676_100_4_G.jpg);
   background-position: bottom right;
   border-bottom: 1px solid #E37315;
-  height: 150vmin;
+  height: 220vmin;
 }
 #band p a {
   text-decoration: none;
   color: #E37315;
+}
+#band p {
+  margin-bottom: 20px;
+}
+#band .karin2 {
+  margin-top: 70px;
+}
+#band h2 {
+  font-size: 4vmin;
+}
+.modal-header {
+  border-bottom: 1px solid #e37315;
+  background-color: #222;
+}
+.modal-body {
+  background-color: #000;
+}
+.modal-footer {
+  text-align: center;
+  border-top: 1px solid #e37315;
+  background-color: #222;
 }
 #myCarousel {
   margin-bottom: 25px;
@@ -391,7 +428,234 @@ div.main section > div {
 }
 
 /*media queries to improve experience on smaller devices*/
-@media (max-width: 1199px) and (max-height: 836px) {
+@media (max-width: 767px) and (max-height: 950px){
+  #band {
+    height: 260vmin;
+  }
+}
+@media (min-width: 768px) and (max-height: 764px) {
+  #band {
+    height: 270vmin;
+  }
+  .social2 {
+    height: 10vmin;
+  }
+}
+@media (min-width: 768px) and (max-height: 600px) {
+  #home .homeText {
+    margin-top: 10px;
+  }
+  #music {
+    height: 170vmin;
+  }
+  #store .marginTop {
+    margin-top: 10px;
+  }
+  #band {
+    height: 320vmin;
+  }
+  #band .musicImgBand4 {
+    width: 55vmin;
+  }
+  #band .storeP {
+    font-size: 2.8vmin;
+  }
+  .social2 {
+    height: 7vmin;
+    padding-top: 0px;
+  }
+}
+@media (min-width: 768px) and (max-height: 460px) {
+  #store {
+    height: 120vmin;
+  }
+  #store .asap1 {
+    font-size: 5vmin;
+  }
+  #store .asap2 {
+    font-size: 5vmin;
+  }
+  #store .storeP {
+    font-size: 4vmin;
+  }
+  #band {
+    height: 350vmin;
+  }
+  #band .storeP {
+    font-size: 3.5vmin;
+  }
+}
+@media (min-width: 768px) and (max-height: 406px) {
+  #band {
+    height: 380vmin;
+  }
+  #band h4 {
+    font-size: 13px;
+  }
+  #band .karin2 {
+    margin-top: 20px;
+  }
+  #band .storeP {
+    font-size: 4vmin;
+  }
+  #band .musicImgBand4 {
+    width: 70vmin;
+  }
+
+}
+@media (min-width: 768px) and (max-height: 346px) {
+  #music {
+    height: 200vmin;
+  }
+  #band {
+    height: 430vmin;
+  }
+}
+@media (min-width: 768px) and (max-height: 315px) {
+  #home .musicImg {
+    width: 30vmin;
+  }
+  #store {
+    height: 160vmin;
+  }
+  #store .storeImg1 {
+    width: 40vmin;
+  }
+  #band {
+    height: 430vmin;
+  }
+  #myCarousel {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-height: 240px) {
+  #home {
+    height: 140vmin;
+  }
+  #music {
+    height: 300vmin;
+  }
+  #band {
+    height: 540vmin;
+  }
+}
+@media (max-width: 767px) and (max-height: 950px) {
+  #home .social2 {
+    padding-top: 19px;
+  }
+  #home .homeText {
+    margin-top: 20px;
+  }
+  #music {
+    height: 200vmin;
+  }
+  #store {
+    height: 150vmin;
+  }
+  #store .storeImg1 {
+    width: 40vmin;
+  }
+  #store .marginTop {
+    margin-top: 10px;
+  }
+  #store .alignLeft {
+    text-align: center;
+  }
+  #store h2 {
+    font-size: 4vmin;
+  }
+}
+@media (max-width: 600px) and (max-height: 950px) {
+  #store .storeP {
+    font-size: 3.2vmin;
+  }
+  #band {
+    height: 300vmin;
+  }
+  #band .storeP {
+    font-size: 3.2vmin;
+  }
+}
+@media (max-width: 499px) and (max-height: 950px) {
+  #music {
+    height: 250vmin;
+  }
+  #music h2 {
+    font-size: 15px;
+  }
+  #band {
+    height: 350vmin;
+  }
+  #band .karin2 {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 399px) and (max-height: 950px) {
+  #home .homeText {
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+  #home .social2 {
+    padding-top: 16px;
+  }
+}
+@media (max-width: 350px) and (max-height: 950px) {
+  #home .musicImg {
+    width: 30vmin;
+  }
+  #home .social2 {
+    height: 10vmin;
+    padding-left: 3px;
+  }
+  #music .musicImgBand2 {
+    margin-bottom: 40px;
+  }
+  #store {
+    height: 170vmin;
+  }
+  #store .storeImg3 {
+    margin-top: 0px;
+  }
+  #store h2 {
+    font-size: 5vmin;
+  }
+  #store .marginTop1 {
+    margin-top: 4px;
+  }
+  #store .storeP {
+    font-size: 4.5vmin;
+  }
+  #store .buyNow {
+    width: 47vmin;
+    font-size: 5vmin;
+  }
+  #band {
+    height: 440vmin;
+  }
+  #band h4 {
+    font-size: 10px;
+  }
+  #band .storeP {
+    font-size: 4.5vmin;
+  }
+}
+@media (max-width: 250px) and (max-height: 950px) {
+  #music {
+    height: 300vmin;
+  }
+  #band {
+    height: 500vmin;
+  }
+  #band .storeP {
+    font-size: 4.5vmin;
+  }
+}
+@media (max-width: 250px) and (max-height: 950px) {
+  #band {
+    height: 550vmin;
+  }
+}
+/*@media (max-width: 1199px) and (max-height: 836px) {
   #band {
     height: 180vmin;
   }
@@ -727,15 +991,12 @@ div.main section > div {
   }
 }
 @media (max-width: 406px) {
-  #music {
-    /*height: 270vmin;*/
-  }
   #tidal {
     height: 35px;
     padding-left: 8px;
   }
-}
-@media (max-width: 400px) {
+}*/
+/*@media (max-width: 400px) {
   .musicImg {
     display: inline-block;
     width: 45vmin;
@@ -1047,7 +1308,7 @@ div.main section > div {
   #contact {
     padding-top: 18vmin;
   }
-}
+}*/
 .loadlogo {
   z-index: 2000;
 }
