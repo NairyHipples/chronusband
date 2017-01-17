@@ -583,7 +583,7 @@ div.main section > div {
     font-size: 3.2vmin;
   }
 }
-@media (max-width: 499px) and (max-height: 950px) {
+@media (max-width: 550px) and (max-height: 675px) {
   #home .homeText {
     margin-top: 10px;
     margin-bottom: 0px;
@@ -608,6 +608,29 @@ div.main section > div {
     width: 50vmin;
     font-size: 7vmin;
   }
+}
+@media (max-width: 550px) and (max-height: 620px) {
+  #home .musicImg {
+    width: 50vmin;
+  }
+}
+@media (max-width: 550px) and (max-height: 560px) {
+  #home .btn-default {
+    width: 30vmin;
+    font-size: 3vmin;
+  }
+}
+@media (max-width: 550px) and (max-height: 450px) {
+  #home .musicImg {
+    width: 30vmin;
+  }
+  #home .btn-default {
+    width: 30vmin;
+    font-size: 3vmin;
+  }
+}
+@media (max-width: 499px) and (max-height: 950px) {
+
   #music {
     height: 250vmin;
   }
@@ -632,6 +655,37 @@ div.main section > div {
   #home .btn-default {
     width: 36vmin;
     font-size: 4vmin;
+  }
+}
+@media (max-width: 499px) and (max-height: 538px) {
+  #home .homeText {
+    font-size: 7vmin;
+  }
+  #home .musicImg {
+    width: 45vmin;
+    margin-top: 5vmin;
+  }
+  #home .social2 {
+    height: 9vmin;
+    padding-top: 17px;
+  }
+}
+@media (max-width: 499px) and (max-height: 450px) {
+  #home .homeText {
+    font-size: 7vmin;
+  }
+  #home .social2 {
+    height: 7vmin;
+    padding-top: 9px;
+  }
+  #home .btn-default {
+    margin-top: 3vmin;
+  }
+}
+@media (max-width: 499px) and (max-height: 350px) {
+  #home .social2 {
+    height: 6vmin;
+    padding-top: 2px;
   }
 }
 @media (max-width: 499px) and (max-height: 321px) {
@@ -677,6 +731,19 @@ div.main section > div {
   #home .btn-default {
     width: 37vmin;
     font-size: 4vmin;
+  }
+}
+@media (max-width: 450px) and (max-height: 490px) {
+  #home .homeText {
+    font-size: 7vmin;
+  }
+  #home .musicImg {
+    width: 35vmin;
+    margin-top: 2vmin;
+  }
+  #home .social2 {
+    height: 7vmin;
+    padding-top: 7px;
   }
 }
 /*@media (max-width: 399px) and (max-height: 950px) {
