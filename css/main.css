@@ -570,8 +570,8 @@ div.main section > div {
 }
 @media (max-width: 600px) and (max-height: 950px) {
   #home {
-    background-image: url(../imgs/album/Album_BG7.jpg);
-    background-position: center top;
+    background-image: url(../imgs/album/Mobile_BG1.jpg);
+    background-position: right top;
   }
   #store .storeP {
     font-size: 3.2vmin;
