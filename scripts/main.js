@@ -18,4 +18,9 @@ $(document).ready(function() {
   var newHeight = $(window).height() + 70;
   $("#home, #contact").css("height", newHeight);
  }
+ $(".fancybox").fancybox({
+      openEffect: "none",
+      closeEffect: "none"
+  });
+
 }); // end DOC ready
