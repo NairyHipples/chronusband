@@ -1,0 +1,120 @@
+<div id="snickeri-pic-container">
+  <div class="container2">
+    <div class="">
+      <div class="row circleRow">
+        <div class="col-lg-12 center margin-top">
+          <a><i class="fa fa-home"></i></a>
+          <h2 class="center"><span class="highlight3">Oliver Delander</span></h2>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+    </div>
+  </div>
+</div>
+<div class="white">
+  <div class="marketing container2">
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Modernt. <span class="text-muted">Praktiskt.</span></h2>
+        <p class="lead">Vi använder kvalitetsmaterial som uppfyller modern standard både i utseende och hållbarhet. Anlita oss för ditt projekt!</p>
+      </div>
+      <div class="col-md-5">
+        <img id="myImg8" class="featurette-image img-responsive center-block" src="img/modal-img/snickeri2.jpg">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="marketing container2">
+  <div class="row featurette">
+    <div class="col-md-7 col-md-push-5">
+      <h2 class="featurette-heading">Modernt. <span class="text-muted">Praktiskt.</span></h2>
+      <p class="lead">Vi använder kvalitetsmaterial som uppfyller modern standard både i utseende och hållbarhet. Anlita oss för ditt projekt!</p>
+    </div>
+    <div class="col-md-5 col-md-pull-7">
+      <img id="myImg4" class="featurette-image img-responsive center-block" src="img/modal-img/Gran_Vkingagatan_5.jpg">
+    </div>
+  </div>
+</div>
+<div class="white">
+  <div class="marketing container2 center">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="featurette-heading">Stora projekt som små. <span class="text-muted">Vi kan göra det.</span></h2>
+        <p class="lead">Allt från stora byggnationer till montering av fönster. Ge jobbet till oss på Byggest!</p>
+      </div>
+      <div class="col-md-12 contact-button-container">
+        <a href="/om-oss" type="button" class="contact-button">Läs mer!</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="myModal8" class="modal">
+  <div id="caption8"><h4>Tryck på skärmen för att stänga bilden.</h4></div>
+  <span class="close" onclick="document.getElementById('myModal8').style.display='none'">&times;</span>
+  <img class="modal-content" id="img08">
+</div>
+<div id="myModal4" class="modal">
+  <div id="caption4"><h4>Tryck på skärmen för att stänga bilden.</h4></div>
+  <span class="close" onclick="document.getElementById('myModal4').style.display='none'">&times;</span>
+  <img class="modal-content" id="img04">
+</div>
+<footer class="footer">
+  <div class="container footerText">
+    <h2>Information</h2>
+    <div class="row">
+      <div class="col-md-6 align-left">
+        <img src="img/logo/logo.png" alt="Byggest Logo" class="footerLogo">
+        <p>Byggest VVS &amp; EL AB<br>Klostervägen 27<br>196 31 Kungsängen<br>Org. nr: 559090-7696</p>
+      </div>
+      <div class="col-md-6 contact-info align-left">
+        <p><strong>Tel:</strong> <span class="highlight2">08-40 888 609</span></p>
+        <p><strong>E-mail:</strong> <span class="highlight2">info@byggest.se</span></p>
+      </div>
+    </div>
+  </div>
+  <div class="container footerText">
+    <p>&#169; 2017 Jonatan Östling</p>
+  </div>
+</footer>
+<script type="text/javascript">
+  $(document).ready(function() {
+    var modal4 = document.getElementById('myModal4');
+    var modal8 = document.getElementById('myModal8');
+    var img4 = document.getElementById('myImg4');
+    var img8 = document.getElementById('myImg8');
+    var modalImg4 = document.getElementById("img04");
+    var modalImg8 = document.getElementById("img08");
+    var captionText4 = document.getElementById("caption4");
+    var captionText8 = document.getElementById("caption8");
+    img4.onclick = function(){
+      modal4.style.display = "block";
+      modalImg4.src = this.src;
+      captionText4.innerHTML.style.display = "block";
+    }
+    img8.onclick = function(){
+      modal8.style.display = "block";
+      modalImg8.src = this.src;
+      captionText8.innerHTML.style.display = "block";
+    }
+    var span = document.getElementsByClassName("close")[0];
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    modal4.onclick = function() {
+      modal4.style.display = "none";
+    }
+    modal8.onclick = function() {
+      modal8.style.display = "none";
+    }
+  });
+</script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    if (window.location.href.indexOf("/referens", "/referens-badrum", "/referens-kok", "/referens-vvs", "/referens-snickeri") > -1) {
+      $('.referens').addClass('active');
+
+    } else {
+      $('.referens').removeClass('active');
+    }
+  });
+</script>
