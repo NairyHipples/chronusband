@@ -1,5 +1,0 @@
-# robots.txt file for ChronusOfficial
-# Crawlers please look away
-
-User-agent: *
-Disallow: /secret/
