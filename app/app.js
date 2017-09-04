@@ -16,27 +16,27 @@ app.config(['$routeProvider', '$locationProvider',
   $locationProvider.html5Mode(true);
   $routeProvider
     .when('/', {
-      templateUrl: '../app/partials/home/home.html',
+      templateUrl: 'app/partials/home/home.html',
       controller: 'navController'
     })
-    .when('/store', {
-      templateUrl: '../app/partials/store/store.html',
+    .when('/#store', {
+      templateUrl: 'app/partials/store/store.html',
       controller: 'navController'      
     })
-    .when('/band', {
-      templateUrl: '../app/partials/band/band.html',
+    .when('/#band', {
+      templateUrl: 'app/partials/band/band.html',
       controller: 'navController'      
     })
     .when('/gallery-live', {
-      templateUrl: '../app/partials/gallery/gallery-live.html',
+      templateUrl: 'app/partials/gallery/gallery-live.html',
       controller: 'navController'
     })
     .when('/gallery-promo', {
-      templateUrl: '../app/partials/gallery/gallery-promo.html',
+      templateUrl: 'app/partials/gallery/gallery-promo.html',
       controller: 'navController'
     })
     .when('/contact', {
-      templateUrl: '../app/partials/contact/contact.html',
+      templateUrl: 'app/partials/contact/contact.html',
       controller: 'navController'
     })
     .otherwise({ redirectTo: '/' });
