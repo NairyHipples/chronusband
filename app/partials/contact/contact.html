@@ -1,0 +1,49 @@
+<div id="offert-bg">
+  <div class="container center">
+    <h1>Contact Chronus</h1>
+    <form action="https://formspree.io/chronusband@gmail.com" class="form-horizontal" role="form" method="POST">
+      <div class="form-group">
+        <div class="col-xs-12">
+          <label for="email" class="control-label"><span class="highlight">E-mail</span></label>
+          <input type="email" name="_replyto" class="form-control align-left" placeholder="example&#64;email.com">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-xs-12">
+          <label for="message" class="control-label"><span class="highlight">Message</span></label>
+          <textarea name="message" class="form-control" rows="4"></textarea>
+          <input class="send-button" name="submit" type="submit" value="Send">
+        </div>
+      </form>
+      </div>
+  </div>
+</div>
+<footer class="footer">
+  <div class="container footerText">
+    <h2>Social Media</h2>
+    <div class="row">
+      <div class="col-md-6 align-left">
+        <img src="img/logo/logo.png" alt="Chronus Logo" class="footerLogo">
+      </div>
+      <div class="col-md-6 social-media align-left">
+        <a target="_blank" href="https://www.facebook.com/chronusband"><img class="social1" src="img/partners/FB-f-Logo__white_1024.png" alt="Chronus on Facebook" /></a>
+        <a target="_blank" href="https://www.youtube.com/user/Chronusband/"><img class="social1" src="img/partners/YouTube_light_color_icon.png" alt="Chronus on YouTube" /></a>
+        <a target="_blank" href="https://www.instagram.com/chronusband/"><img class="social1" src="img/partners/glyph-logo_May2016.png" alt="Chronus on Instagram" /></a>
+        <a target="_blank" href="https://twitter.com/ChronusOfficial"><img class="social1" src="img/partners/Twitter_Social_Icon_White.png" alt="Chronus on Twitter" /></a>
+      </div>
+    </div>
+  </div>
+  <div class="container footerText">
+    <p>&#169; 2017 Jonatan Östling</p>
+  </div>
+</footer>
+<script type="text/javascript">
+  $(document).ready(function() {
+    if (window.location.href.indexOf("/referens", "/referens-badrum", "/referens-kok", "/referens-vvs", "/referens-snickeri") > -1) {
+      $('.referens').addClass('active');
+
+    } else {
+      $('.referens').removeClass('active');
+    }
+  });
+</script>
