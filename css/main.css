@@ -73,6 +73,9 @@ input, textarea {
   width:439px;
   margin-top:3px;
 }
+.mobile {
+  display: none;
+}
 /*****************************/
 /********** FONTS ************/
 /*****************************/
@@ -980,6 +983,12 @@ footer .footerText:last-child {
   }
 }
 @media (max-width: 767px) {
+  .mobile {
+    display: block;
+  }
+  .desktop {
+    display: none;
+  }
   .bandimage-container .container2 .row .col-md-6 img:last-child {
     margin-bottom: 50px;
   }
