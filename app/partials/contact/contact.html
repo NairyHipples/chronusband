@@ -1,31 +1,32 @@
-<div id="offert-bg">
+<div id="contact-bg">
   <div class="container center">
-    <h1>Contact Chronus</h1>
+    <h1><span>Contact Chronus</span></h1>
     <form action="https://formspree.io/chronusband@gmail.com" class="form-horizontal" role="form" method="POST">
       <div class="form-group">
         <div class="col-xs-12">
-          <label for="email" class="control-label"><span class="highlight">E-mail</span></label>
+          <label for="email" class="control-label"><span>E-mail</span></label>
           <input type="email" name="_replyto" class="form-control align-left" placeholder="example&#64;email.com">
         </div>
       </div>
       <div class="form-group">
         <div class="col-xs-12">
-          <label for="message" class="control-label"><span class="highlight">Message</span></label>
+          <label for="message" class="control-label"><span>Message</span></label>
           <textarea name="message" class="form-control" rows="4"></textarea>
           <input class="send-button" name="submit" type="submit" value="Send">
         </div>
-      </form>
       </div>
+    </form>
   </div>
 </div>
+<!-- Footer Open -->
 <footer class="footer">
   <div class="container footerText">
     <h2>Social Media</h2>
     <div class="row">
-      <div class="col-md-6 align-left">
+      <div class="col-xs-6 col-md-6 align-left">
         <img src="img/logo/logo.png" alt="Chronus Logo" class="footerLogo">
       </div>
-      <div class="col-md-6 social-media align-left">
+      <div class="col-xs-6 col-md-6 social-media align-right">
         <a target="_blank" href="https://www.facebook.com/chronusband"><img class="social1" src="img/partners/FB-f-Logo__white_1024.png" alt="Chronus on Facebook" /></a>
         <a target="_blank" href="https://www.youtube.com/user/Chronusband/"><img class="social1" src="img/partners/YouTube_light_color_icon.png" alt="Chronus on YouTube" /></a>
         <a target="_blank" href="https://www.instagram.com/chronusband/"><img class="social1" src="img/partners/glyph-logo_May2016.png" alt="Chronus on Instagram" /></a>
@@ -36,10 +37,10 @@
   <div class="container footerText">
     <p>&#169; 2017 Jonatan Östling</p>
   </div>
-</footer>
+</footer> <!-- Footer Close -->
 <script type="text/javascript">
   $(document).ready(function() {
-    if (window.location.href.indexOf("/referens", "/referens-badrum", "/referens-kok", "/referens-vvs", "/referens-snickeri") > -1) {
+    if (window.location.href.indexOf("/gallery-live", "/gallery-promo") > -1) {
       $('.referens').addClass('active');
 
     } else {

@@ -362,8 +362,8 @@ footer .footerText:last-child {
   background-color: #ffffff;
 }
 .highlight {
-  color: #000;
-  background-color: #ED9507;
+  color: #fff;
+  background-color: #c74110;
   padding-left: 5px;
   padding-right: 5px;
 }
@@ -371,7 +371,7 @@ footer .footerText:last-child {
   padding: 5px;
   color: #fff;
   background-color: #000;
-  border: 1px solid #ED9507;
+  border: 1px solid #c74110;
   padding-left: 5px;
   padding-right: 5px;
 }
@@ -379,14 +379,14 @@ footer .footerText:last-child {
   margin-top: 20px;
 }
 .highlight2 {
-  color: #ED9507;
+  color: #c74110;
   font-weight: 800;
   padding-left: 2px;
   padding-right: 2px;
 }
 .highlight3 {
   color: #333;
-  background-color: #ED9507;
+  background-color: #c74110;
   padding-left: 5px;
   padding-right: 5px;
 }
@@ -511,6 +511,14 @@ footer .footerText:last-child {
 .form-horizontal .control-label {
     text-align: left;
 }
+.form-horizontal .control-label {
+    padding-top: 27px;
+    margin-bottom: 0;
+}
+.form-control {
+  color: #fff;
+  background-color: transparent;
+}
 .footer {
   padding-top: 30px;
   bottom: 0;
@@ -572,30 +580,11 @@ footer .footerText:last-child {
   font-size: 28px;
   color: #000;
 }
-.send-button {
-  margin-bottom: 30px;
-  padding: 20px 30px;
-  font-family: 'Allerta Stencil', sans-serif;
-  font-size: 20px;
-  color: #333;
-  background-color: #fac400;
-  border: none;
-  -webkit-transition: padding 0.1s, font-size 0.1s; /* For Safari 3.1 to 6.0 */
-  transition: padding 0.1s, font-size 0.1s;
-  -webkit-transition-timing-function: ease;
-  transition-timing-function: ease;
-}
-.send-button:hover {
-  text-decoration: none;
-  padding: 30px 40px;
-  font-size: 24px;
-  color: #000;
-}
 /*****************************/
 /********* CAROUSEL **********/
 /*****************************/
 #myCarousel {
-  height: 500px;
+  height: 600px;
   overflow-y: hidden;
 }
 .carousel img {
@@ -632,6 +621,23 @@ footer .footerText:last-child {
   cursor: pointer;
   text-decoration: none;
   color: #d0d0d0;
+}
+.send-button {
+  width: 50%;
+  padding: 8px 17px;
+  margin-bottom: 30px;
+  font-family: 'Hammersmith One', sans-serif;
+  font-size: 28px;
+  color: #c74110;
+  background-color: #000;
+  border: none;
+  border-radius: 0px;
+}
+.send-button:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color: #d0d0d0;
+  background-color: #333;
 }
 /*****************************/
 /********** IMAGE ************/
@@ -764,13 +770,15 @@ footer .footerText:last-child {
   height: 200px;
   cursor: default;
 }
-#offert-bg {
-  background-image: url('../img/background-img/rsz_1building-joy-planning-plans_40.jpg');
+#contact-bg {
+  background-image: url('../img/background-img/pexels-photo-92976_90_222.jpg');
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
+  font-family: 'Montserrat', sans-serif;
 }
-#offert-bg h1 {
+#contact-bg h1 {
+  /* font-family: 'Hammersmith One', sans-serif; */
   margin-top: 50px;
 }
 .lb-thumbnail {
@@ -877,6 +885,11 @@ footer .footerText:last-child {
 /*****************************/
 /******* MEDIA QUERIES *******/
 /*****************************/
+@media (max-width: 1370px) {
+  #myCarousel {
+    height: 500px;
+  }
+}
 @media (max-width: 1200px) {
   .container2 {
     padding-top: 0px;
@@ -909,18 +922,16 @@ footer .footerText:last-child {
     font-size: 20px;
   }
 }
-@media (max-width: 1130px) {
+@media (max-width: 1122px) {
   #myCarousel {
     height: 400px;
-  }
-}
-@media (max-width: 1106px) {
+  } 
   .carousel-caption h1 {
     font-size: 25px;
     margin-bottom: 10px;
   }
   .carousel-caption {
-    top: 180px;
+    top: 120px;
   }
   .carousel-button {
     font-size: 20px;
@@ -946,7 +957,7 @@ footer .footerText:last-child {
     height: 468px;
   }
   #myCarousel {
-    max-height: 400px;
+    height: 400px;
   }
   .carousel img {
     top: 50;
@@ -983,6 +994,9 @@ footer .footerText:last-child {
   }
 }
 @media (max-width: 767px) {
+  .desktop {
+    display: none; 
+  }
   .bandimage-container .container2 .row .col-md-6 img:last-child {
     margin-bottom: 50px;
   }
@@ -1009,7 +1023,7 @@ footer .footerText:last-child {
     display: none;
   }
   #myCarousel {
-    display: none;
+    height: 812px;
   }
   .carousel-caption {
     top: 130px;

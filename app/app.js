@@ -27,14 +27,14 @@ app.config(['$routeProvider', '$locationProvider',
       templateUrl: 'app/partials/band/band.html',
       controller: 'navController'      
     })
-    .when('/gallery-live', {
-      templateUrl: 'app/partials/gallery/gallery-live.html',
-      controller: 'navController'
-    })
-    .when('/gallery-promo', {
-      templateUrl: 'app/partials/gallery/gallery-promo.html',
-      controller: 'navController'
-    })
+    // .when('/gallery-live', {
+    //   templateUrl: 'app/partials/gallery/gallery-live.html',
+    //   controller: 'navController'
+    // })
+    // .when('/gallery-promo', {
+    //   templateUrl: 'app/partials/gallery/gallery-promo.html',
+    //   controller: 'navController'
+    // })
     .when('/contact', {
       templateUrl: 'app/partials/contact/contact.html',
       controller: 'navController'

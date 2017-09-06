@@ -43,7 +43,7 @@
     <link rel="stylesheet" href="css/main.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="css/lightbox.css">
   </head>
-  <body>
+  <body id="bodyElement">
     <div id="loader-wrapper">
       <div id="loader"><img src="img/logo/ChronusOWhite1.png" alt="Chronus O logo loading website animation"></div>
       <div class="loader-section section-left"></div>
@@ -58,6 +58,7 @@
               <li data-ng-class="{active: isActive('/')}"><a href="/">HOME</a></li>
               <li data-ng-class="{active: isActive('/band')}"><a href="/band">BAND</a></li>
               <li data-ng-class="{active: isActive('/store')}"><a href="/store">STORE</a></li>
+              <li data-ng-class="{active: isActive('/contact')}"><a href="/contact">CONTACT</a></li>
             </ul>
           </nav>
         </header>
@@ -83,6 +84,7 @@
                 <li data-ng-class="{active: isActive('/')}"><a class="smoothScroll" href="/">HOME</a></li>
                 <li data-ng-class="{active: isActive('/band')}"><a href="/band">BAND</a></li>
                 <li data-ng-class="{active: isActive('/store')}"><a href="/store">STORE</a></li>
+                <li data-ng-class="{active: isActive('/contact')}"><a href="/contact">CONTACT</a></li>
               </ul>
             </div>
           </nav>
@@ -103,15 +105,5 @@
     <script src="js/bootstrap.js" charset="utf-8"></script>
     <script src="js/lightbox.js"></script>
     <script src="js/main.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function() {
-        if (window.location.href.indexOf("/gallery-live", "/gallery-promo") > -1) {
-          $('.referens').addClass('active');
-
-        } else {
-          $('.referens').removeClass('active');
-        }
-      });
-    </script>
   </body>
 </html>
