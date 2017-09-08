@@ -588,8 +588,11 @@ footer .footerText:last-child {
 /********* CAROUSEL **********/
 /*****************************/
 #myCarousel {
-  height: 600px;
+  height: 44vw;
   overflow-y: hidden;
+}
+#myCarousel h1 {
+  font-size: 2.5vw;
 }
 .carousel img {
   top: 0;
@@ -599,7 +602,7 @@ footer .footerText:last-child {
   max-width: none;
 }
 .carousel-caption {
-  top: 160px;
+  top: 15vw;
   bottom: 0px;
   height: 200px;
   padding-top: 0px;
@@ -614,7 +617,7 @@ footer .footerText:last-child {
 .carousel-button {
   padding: 8px 17px;
   font-family: 'Hammersmith One', sans-serif;
-  font-size: 28px;
+  font-size: 2vw;  
   color: #c74110;
   /*#942121*/
   background-color: #000;
@@ -775,14 +778,13 @@ footer .footerText:last-child {
   cursor: default;
 }
 #contact-bg {
-  background-image: url('../img/background-img/pexels-photo-92976_90_222.jpg');
-  background-size: cover;
-  background-position: center top;
-  background-repeat: no-repeat;
+  /* background-image: url('../img/background-img/pexels-photo-92976_90_222.jpg'); */
+  /* background-size: cover; */
+  /* background-position: center top; */
+  /* background-repeat: no-repeat; */
   font-family: 'Montserrat', sans-serif;
 }
 #contact-bg h1 {
-  /* font-family: 'Hammersmith One', sans-serif; */
   margin-top: 50px;
 }
 .lb-thumbnail {
@@ -889,11 +891,6 @@ footer .footerText:last-child {
 /*****************************/
 /******* MEDIA QUERIES *******/
 /*****************************/
-@media (max-width: 1370px) {
-  #myCarousel {
-    height: 500px;
-  }
-}
 @media (max-width: 1200px) {
   .container2 {
     padding-top: 0px;
@@ -927,23 +924,11 @@ footer .footerText:last-child {
   }
 }
 @media (max-width: 1122px) {
-  #myCarousel {
-    height: 400px;
-  } 
-  .carousel-caption h1 {
-    font-size: 25px;
-    margin-bottom: 10px;
-  }
-  .carousel-caption {
-    top: 120px;
-  }
-  .carousel-button {
-    font-size: 20px;
-  }
+  
 }
 @media (max-width: 991px) {
   body {
-    height: 970px;
+    height: 100vh;
   }
   .store-item-description-show {
     display: none;
@@ -960,20 +945,11 @@ footer .footerText:last-child {
   #pic-container2 {
     height: 468px;
   }
-  #myCarousel {
-    height: 400px;
-  }
   .carousel img {
     top: 50;
     left: 100;
     min-width: 100%;
     height: 500px;
-  }
-  .carousel-caption {
-    top: 120px;
-  }
-  .carousel-button {
-    font-size: 20px;
   }
   .circleRow {
     margin-top: 0px;
@@ -988,9 +964,7 @@ footer .footerText:last-child {
   }
 }
 @media (max-width: 930px) {
-  #myCarousel {
-    height: 342px;
-  }
+  
 }
 @media (max-width: 854px) {
   .underline {
@@ -998,6 +972,27 @@ footer .footerText:last-child {
   }
 }
 @media (max-width: 767px) {
+  #myCarousel {
+    height: 113vw;
+  }
+  #myCarousel h1 {
+    font-size: 5.5vw;
+  }
+  .carousel-caption {
+    top: 27vw;
+  }
+  .underline {
+    font-size: 5.5vw;
+  }
+  .carousel-button {
+    font-size: 4.4vw;
+  }
+  html {
+    font-size: 2px;
+  }
+  body {
+    font-size: 1px;
+  }
   .desktop {
     display: none; 
   }
@@ -1025,12 +1020,6 @@ footer .footerText:last-child {
   }
   .headerLogo {
     display: none;
-  }
-  #myCarousel {
-    height: 812px;
-  }
-  .carousel-caption {
-    top: 130px;
   }
   #pic-container2 {
     height: 850px;
@@ -1074,11 +1063,6 @@ footer .footerText:last-child {
 @media (max-width: 740px) {
   h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     line-height: 1.3;
-  }
-}
-@media (max-width: 666px) {
-  .carousel-caption {
-    top: 20px;
   }
 }
 @media (max-width: 560px) {
@@ -1172,9 +1156,6 @@ footer .footerText:last-child {
   }
   .item {
     min-height: 200px;
-  }
-  .carousel-caption h1 .underline {
-    font-size: 18px;
   }
   .pagination li a {
     font-size: 14px;
