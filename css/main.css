@@ -448,6 +448,10 @@ footer .footerText:last-child {
   width: 100%;
   background-color: #000;
 }
+.bandimage-container .container2 .row .col-md-6 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
 .container3 {
   max-width: 1200px;
   padding-right: 15px;
