@@ -7,7 +7,7 @@ body {
   min-width: 175px;
   margin:0;
   padding:0;
-  background-color: #111;
+  background-color: #000;
   font-family: 'Hammersmith One', sans-serif;
   color: #fff;
 }
@@ -347,8 +347,8 @@ footer .footerText:last-child {
 .align-right {
   text-align: right;
 }
-.dark {
-  background-color: #000;
+.grey {
+  background-color: #111;
 }
 .white2 {
   padding-top: 40px;
