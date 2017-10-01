@@ -21,19 +21,19 @@ app.config(['$routeProvider', '$locationProvider',
     })
     .when('/news', {
       templateUrl: 'app/partials/news/news.html',
-      controller: 'navController'      
+      controller: 'navController'  
     })
     .when('/tour', {
       templateUrl: 'app/partials/tour/tour.html',
-      controller: 'navController'      
+      controller: 'navController'
     })
     .when('/band', {
       templateUrl: 'app/partials/band/band.html',
-      controller: 'navController'      
+      controller: 'navController'
     })
     .when('/store', {
       templateUrl: 'app/partials/store/store.html',
-      controller: 'navController'      
+      controller: 'navController'
     })
     // .when('/gallery-live', {
     //   templateUrl: 'app/partials/gallery/gallery-live.html',
