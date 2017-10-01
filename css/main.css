@@ -1145,9 +1145,6 @@ footer .footerText:last-child {
   .item1 h1, .item2 h1, .item3 h1, .item4 h1 {
     margin-bottom: 10px;
   }
-  .thumbnail {
-    margin-top: 65px;
-  }
   .newsAnchor {
     font-size: 4.5vw;
   }
