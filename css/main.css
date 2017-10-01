@@ -1040,9 +1040,15 @@ footer .footerText:last-child {
 }
 @media (max-width: 767px) {
   body {
-		padding-left: 0;
+    height: 100%;
+    min-width: 175px;
+    margin:0;
+    padding-left: 0;
 		padding-right: 0;
-	}
+    background-repeat: initial;
+    background-attachment: initial; 
+    background-size: initial;
+  }
   h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     line-height: 1.3;
   }
