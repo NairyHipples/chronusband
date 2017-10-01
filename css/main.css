@@ -454,7 +454,6 @@ footer .footerText:last-child {
 /****** MOBILE CLASSES *******/
 /*****************************/
 .mobile-indicator {
-  background-color: #000;
   display: none;
   width: 100%;
   text-align: center;
