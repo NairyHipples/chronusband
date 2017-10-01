@@ -1044,7 +1044,8 @@ footer .footerText:last-child {
     min-width: 175px;
     margin:0;
     padding-left: 0;
-		padding-right: 0;
+    padding-right: 0;
+    background: #000;
     background-repeat: initial;
     background-attachment: initial; 
     background-size: initial;
