@@ -580,7 +580,7 @@ footer .footerText:last-child {
   color: #FFF;
   text-align: center;
 }
-.bandPage footer {
+.bandPage footer, .homePage footer {
   background-color: #000;
 }
 /*****************************/
