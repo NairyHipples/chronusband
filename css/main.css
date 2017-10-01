@@ -1,15 +1,21 @@
 html {
   position: relative;
-  min-height: 100%;
+  height: 1000px;
 }
 body {
-  height: 1100px;
+  height: 100%;
   min-width: 175px;
   margin:0;
   padding:0;
   background-color: #000;
   font-family: 'Hammersmith One', sans-serif;
   color: #fff;
+}
+.fill {
+  width:100%;
+  height:100%;
+  background-position: center;
+  background-size:cover;
 }
 main {
   height: 500px;
@@ -20,7 +26,7 @@ div.hidden {
 }
 hr {
   border: 0;
-  border-bottom: 1px solid #111;
+  border-bottom: 1px solid #222;
   border-style: inset;
   border-width: 1px;
 }
@@ -30,7 +36,7 @@ hr {
   margin-top: 50px;
   margin-bottom: 70px;
   line-height: 2;
-  background-color: #111;
+  background-color: #222;
   border: 0px solid #333;
   border-radius: 0px;
   word-spacing: 0.1em;
@@ -111,6 +117,11 @@ input, textarea {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 800;
 }
+.latoTahomaGeneva {
+  display: inline-block;
+  color: #fff;
+  font-family: 'Lato', 'Tahoma', 'Geneva', sans-serif;
+}
 p {
   font-size: 1.3em;
   margin: 19px 0 19px;
@@ -153,6 +164,13 @@ footer .footerText:last-child {
 #myNavbar2 {
   background-color: #eee;
   border: 1px solid #eee;
+}
+.navbar-brand-desktop {
+  display: block;
+  float: left;
+  height: 59px;
+  padding: 9px 20px;
+  margin-top: 5px;
 }
 #myNavbar2 > a {
   color: #fff
@@ -207,7 +225,7 @@ footer .footerText:last-child {
   width: 114px;
 }
 .navbar-inverse {
-  background-color: #111;
+  background-color: #222;
 }
 .navbar-toggle {
   padding: 4px 12px 11px 12px;
@@ -218,7 +236,7 @@ footer .footerText:last-child {
   margin-top: 19px;
 }
 .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
-  background-color: #111;
+  background-color: #222;
 }
 .navbar-inverse .navbar-toggle .icon-bar {
   background-color: #fff;
@@ -263,7 +281,7 @@ footer .footerText:last-child {
 /******* LOGOS / ICONS *******/
 /*****************************/
 .headerLogo {
-  width: 60%;
+  width: 21%;
   margin-top: 10px;
   margin-bottom: 30px;
 }
@@ -350,8 +368,16 @@ footer .footerText:last-child {
 .orange {
   color: #c74110;
 }
+.logos {
+  width: 135px;
+  text-align: center;
+  margin: 0 auto;
+}
 .grey {
-  color: #999;
+  color: #777;
+}
+.gray {
+  background-color: #222;
 }
 .black {
   color: #000;
@@ -371,9 +397,6 @@ footer .footerText:last-child {
 .align-right {
   text-align: right;
 }
-.grey {
-  background-color: #111;
-}
 .white2 {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -386,7 +409,7 @@ footer .footerText:last-child {
   background-color: #ffffff;
 }
 .highlight {
-  color: #fff;
+  color: #000;
   background-color: #c74110;
   padding-left: 5px;
   padding-right: 5px;
@@ -451,12 +474,18 @@ footer .footerText:last-child {
 .photoalbum-title {
   margin-top: 40px;
 }
+.tour-item {
+  margin-bottom: 70px;
+}
+.tour-item .h1, .tour-item .h2, .tour-item .h3 {
+  margin-top: 0px;
+}
 .topContainer {
-  background-color: #111;
+  background-color: #222;
   width: 100%;
 }
 .topContainer2 {
-  background-color: #111;
+  background-color: #222;
   width: 100%;
   display: none;
 }
@@ -482,14 +511,6 @@ footer .footerText:last-child {
   max-width: 1200px;
   padding-right: 15px;
   padding-bottom: 40px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-.container4 {
-  max-width: 720px;
-  padding-right: 15px;
-  padding-bottom: 30px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
@@ -614,14 +635,18 @@ footer .footerText:last-child {
 /********* CAROUSEL **********/
 /*****************************/
 #myCarousel {
-  height: 44vw;
+  height: 93vh;
   overflow-y: hidden;
 }
 #myCarousel h1 {
-  font-size: 2.5vw;
+  font-size: 3.8vh;
   position: relative;
-  top: 1.8em;
+  top: 3vh;
+  margin-bottom: 4.8vh;
   z-index: 2;
+}
+.carousel-inner{
+  height:100%;
 }
 .carousel img {
   top: 0;
@@ -630,20 +655,11 @@ footer .footerText:last-child {
   height: 500px;
   max-width: none;
 }
-.bar {
-  height: 4vw;
-  width: 100%;
-  padding-top: 2vw;
-  -moz-opacity: 0.5;
-  -khtml-opacity: 0.5;
-  opacity: 0.5;
-  filter: alpha(opacity=50);
-  background: black;
-  margin-top: 1vw;
-  margin-bottom: 0.3vw;
+.carousel,.item,.active{
+  height:100%;
 }
 .carousel-caption {
-  top: 15vw;
+  top: 55vh;
   bottom: 0px;
   height: 200px;
   padding-top: 0px;
@@ -659,7 +675,7 @@ footer .footerText:last-child {
 .carousel-button {
   padding: 8px 17px;
   font-family: 'Hammersmith One', sans-serif;
-  font-size: 2vw;  
+  font-size: 3vh;  
   color: #c74110;
   /*#942121*/
   background-color: #000;
@@ -668,8 +684,8 @@ footer .footerText:last-child {
 }
 .carousel-button:hover {
   cursor: pointer;
-  text-decoration: none;
-  color: #d0d0d0;
+    text-decoration: none;
+    color: #d0d0d0;
 }
 .send-button {
   width: 50%;
@@ -689,11 +705,18 @@ footer .footerText:last-child {
   background-color: #333;
 }
 /*****************************/
-/********** IMAGE ************/
+/********** IMAGES ************/
 /*****************************/
 .band-image {
   width: 100%;
   display: block;
+}
+.bandLogo {
+  margin-top: 10px;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+
 }
 .img-responsive {
   border: 0px solid #fac400;
@@ -842,8 +865,9 @@ footer .footerText:last-child {
   max-width: 350px;
 }
 .img-circle {
-  margin-top: 30px;
-  margin-bottom: 20px;
+  display: inline;
+  margin-right: 6px;
+  margin-bottom: 10px;
 }
 .img-circle2 {
   margin-top: 30px;
@@ -1013,28 +1037,36 @@ footer .footerText:last-child {
   }
 }
 @media (max-width: 767px) {
+  body {
+		padding-left: 0;
+		padding-right: 0;
+	}
   h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     line-height: 1.3;
   }
   #myCarousel {
-    height: 113vw;
+    height: 89vh;
   }
   #myCarousel h1 {
     font-size: 5.5vw;
-    top: -12.2vw;   
+    top: 0.8vw;
+    margin-bottom: 2.4vh;
   }
   .bar {
     height: 19vw;
     margin-top: -31vw;
   }
   .carousel-caption {
-    top: 27vw;
+    top: 21vw;
   }
   .underline {
     font-size: 5.5vw;
   }
   .carousel-button {
     font-size: 4.4vw;
+  }
+  .carousel-indicators {
+    bottom: 30px;
   }
   html {
     font-size: 2px;
@@ -1046,17 +1078,21 @@ footer .footerText:last-child {
     margin-bottom: 50px;
   }
   .topContainer {
-    background-color: #111;
+    background-color: #222;
     width: 100%;
     display: none;
   }
   .topContainer2 {
-    background-color: #111;
+    background-color: #222;
     width: 100%;
     display: block;
   }
   .mobile-indicator {
     display: inline-block;
+  }
+  .tour .mobile-indicator hr {
+    margin-top: 0px;
+    margin-bottom: 40px;
   }
   .container2 {
     padding-top: 10px;
@@ -1344,10 +1380,6 @@ footer .footerText:last-child {
   }
   form, .send-button {
     width: 150px;
-  }
-  .img-circle {
-    width: 100px;
-    height: 100px;
   }
   .send-button {
     font-size: 14px;

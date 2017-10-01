@@ -13,26 +13,24 @@
 <div class="marketing container2">
   <div class="row featurette">
     <div class="col-md-7 col-md-push-5">
-      <h2 class="featurette-heading asap">CHRONUS ALBUM ART TEE</h2>
+      <h2 class="featurette-heading asap">PRE-ORDER - "CHRONUS" CD DIGIPAK</h2>
       <div class="store-item-description-show">
-        <p class="lead">Chronus Album artwork T-shirt.<br><strong>SLIM FIT</strong><em>(Gildan Softstyle)</em>.</p>
-        <p class="lead">Sizes: S-XXL</p>
+        <p class="lead">Glossy artwork finish with matte background. Shipped out on release day, October 28th, 2017.</p>
         <br>
-        <a href="http://shop.chronusofficial.com/product/chronus-album-t-shirt" class="goToStore-button">ORDER NOW</a>
+        <a href="http://shop.chronusofficial.com/product/pre-order-chronus-cd-digipak" class="goToStore-button">ORDER NOW</a>
       </div>
     </div>
     <div class="col-md-5 col-md-pull-7">
-      <img id="myImg5" class="featurette-image img-responsive center-block" src="img/modal-img/received_10211761594268422.jpeg">
+      <img id="myImg4" class="featurette-image img-responsive center-block" src="img/modal-img/Chronus_CD.jpg">
     </div>
     <div class="store-item-description-hidden">
-      <p class="lead">Chronus Album artwork T-shirt.<br><strong>SLIM FIT</strong><em>(Gildan Softstyle)</em>.</p>
-      <p class="lead">Sizes: S-XXL</p>
+      <p class="lead">Glossy artwork finish with matte background. Shipped out on release day, October 28th, 2017.</p>
       <br>
-      <a href="http://shop.chronusofficial.com/product/chronus-album-t-shirt" class="goToStore-button">ORDER NOW</a>
+      <a href="http://shop.chronusofficial.com/product/pre-order-chronus-cd-digipak" class="goToStore-button">ORDER NOW</a>
     </div>
   </div>
 </div>
-<div class="grey">
+<div class="gray">
   <div class="marketing container2">
     <div class="row featurette">
       <div class="col-md-7 col-md-push-5">
@@ -56,15 +54,42 @@
     </div>
   </div>
 </div>
-<div id="myModal5" class="modal">
-  <div id="caption5"><h4>Press screen to close.</h4></div>
-  <span class="close" onclick="document.getElementById('myModal5').style.display='none'">&times;</span>
-  <img class="modal-content" id="img05">
+<div class="marketing container2">
+  <div class="row featurette">
+    <div class="col-md-7 col-md-push-5">
+      <h2 class="featurette-heading asap">CHRONUS ALBUM ART TEE</h2>
+      <div class="store-item-description-show">
+        <p class="lead">Chronus Album artwork T-shirt.<br><strong>SLIM FIT</strong><em>(Gildan Softstyle)</em>.</p>
+        <p class="lead">Sizes: S-XXL</p>
+        <br>
+        <a href="http://shop.chronusofficial.com/product/chronus-album-t-shirt" class="goToStore-button">ORDER NOW</a>
+      </div>
+    </div>
+    <div class="col-md-5 col-md-pull-7">
+      <img id="myImg5" class="featurette-image img-responsive center-block" src="img/modal-img/received_10211761594268422.jpeg">
+    </div>
+    <div class="store-item-description-hidden">
+      <p class="lead">Chronus Album artwork T-shirt.<br><strong>SLIM FIT</strong><em>(Gildan Softstyle)</em>.</p>
+      <p class="lead">Sizes: S-XXL</p>
+      <br>
+      <a href="http://shop.chronusofficial.com/product/chronus-album-t-shirt" class="goToStore-button">ORDER NOW</a>
+    </div>
+  </div>
+</div>
+<div id="myModal4" class="modal">
+  <div id="caption4"><h4>Press screen to close.</h4></div>
+  <span class="close" onclick="document.getElementById('myModal4').style.display='none'">&times;</span>
+  <img class="modal-content" id="img04">
 </div>
 <div id="myModal6" class="modal">
   <div id="caption6"><h4>Press screen to close.</h4></div>
   <span class="close" onclick="document.getElementById('myModal6').style.display='none'">&times;</span>
   <img class="modal-content" id="img06">
+</div>
+<div id="myModal5" class="modal">
+  <div id="caption5"><h4>Press screen to close.</h4></div>
+  <span class="close" onclick="document.getElementById('myModal5').style.display='none'">&times;</span>
+  <img class="modal-content" id="img05">
 </div>
 <!-- Footer Open -->
 <footer class="footer">
@@ -88,8 +113,16 @@
   </footer> <!-- Footer Close -->
 <script type="text/javascript">
   $(document).ready(function() {
+    var modal4 = document.getElementById('myModal4');
+    var img4 = document.getElementById('myImg4');
+    var modalImg4 = document.getElementById("img04");
+    var captionText4 = document.getElementById("caption4");
+    img4.onclick = function(){
+      modal4.style.display = "block";
+      modalImg4.src = this.src;
+      captionText4.innerHTML.style.display = "block";
+    }
     var modal5 = document.getElementById('myModal5');
-    var modal6 = document.getElementById('myModal6');
     var img5 = document.getElementById('myImg5');
     var modalImg5 = document.getElementById("img05");
     var captionText5 = document.getElementById("caption5");
@@ -98,6 +131,7 @@
       modalImg5.src = this.src;
       captionText5.innerHTML.style.display = "block";
     }
+    var modal6 = document.getElementById('myModal6');    
     var img6 = document.getElementById('myImg6');
     var modalImg6 = document.getElementById("img06");
     var captionText6 = document.getElementById("caption6");
@@ -109,6 +143,9 @@
     var span = document.getElementsByClassName("close")[0];
     span.onclick = function() {
       modal.style.display = "none";
+    }
+    modal4.onclick = function() {
+      modal4.style.display = "none";
     }
     modal5.onclick = function() {
       modal5.style.display = "none";
