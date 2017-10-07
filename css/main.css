@@ -471,8 +471,13 @@ footer .footerText:last-child {
 .photoalbum-title {
   margin-top: 40px;
 }
-.news .thumbnail {
-
+.videoDiv {
+  max-width: 1000px;
+  text-align: center;
+  margin: 0 auto;
+}
+.embed-responsive .embed-responsive-16by9 {
+  max-width: 1000px;
 }
 .tour-item {
   margin-bottom: 70px;
@@ -570,6 +575,10 @@ footer .footerText:last-child {
   color: #fff;
   background-color: transparent;
 }
+.videoPremiere {
+  height: 93vh;
+  background-color: #000;
+}
 .footer {
   padding-top: 30px;
   bottom: 0;
@@ -578,7 +587,7 @@ footer .footerText:last-child {
   color: #FFF;
   text-align: center;
 }
-.bandPage footer, .homePage footer {
+.bandPage footer, .homePage footer, .homePage {
   background-color: #000;
 }
 /*****************************/
