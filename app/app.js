@@ -23,7 +23,7 @@ app.config(['$routeProvider', '$locationProvider',
       templateUrl: 'app/partials/news/news.html',
       controller: 'navController'  
     })
-    .when('/tour', {
+    .when('/shows', {
       templateUrl: 'app/partials/tour/tour.html',
       controller: 'navController'
     })
@@ -35,14 +35,14 @@ app.config(['$routeProvider', '$locationProvider',
       templateUrl: 'app/partials/store/store.html',
       controller: 'navController'
     })
-    // .when('/gallery-live', {
-    //   templateUrl: 'app/partials/gallery/gallery-live.html',
-    //   controller: 'navController'
-    // })
-    // .when('/gallery-promo', {
-    //   templateUrl: 'app/partials/gallery/gallery-promo.html',
-    //   controller: 'navController'
-    // })
+    .when('/gallery-live', {
+      templateUrl: 'app/partials/gallery/gallery-live.html',
+      controller: 'navController'
+    })
+    .when('/gallery-promo', {
+      templateUrl: 'app/partials/gallery/gallery-promo.html',
+      controller: 'navController'
+    })
     .when('/contact', {
       templateUrl: 'app/partials/contact/contact.html',
       controller: 'navController'

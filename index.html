@@ -1,110 +1,136 @@
 <!DOCTYPE html>
 <html data-ng-app="app">
-  <head>
-    <base href="/" />
-    <title>Chronus Official</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- for Google -->
-    <meta name="description" content="Welcome to the official Chronus website." />
-    <meta name="keywords" content="Chronus Official Website" />
+<head>
+  <base href="/" />
+  <title>Chronus Official</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta name="author" content="Chronus" />
-    <meta name="copyright" content="Jonatan &Ouml;stling" />
-    <meta name="application-name" content="Chronus Website" />
+  <!-- for Google -->
+  <meta name="description" content="Welcome to the official Chronus website." />
+  <meta name="keywords" content="Chronus Official Website" />
 
-    <!-- for Facebook -->
-    <meta property="fb:app_id" content="APPID"/>
-    <meta property="og:title" content="Chronus" />
-    <meta property="og:type" content="article" />
-    <meta property="og:image:url" content="img/logo/chronus-vit.jpg" />
-    <meta property="og:url" content="https://www.chronusofficial.com/" />
-    <meta property="og:description" content="Welcome to the official Chronus website." />
+  <meta name="author" content="Chronus" />
+  <meta name="copyright" content="Jonatan &Ouml;stling" />
+  <meta name="application-name" content="Chronus Website" />
 
-    <!-- for Twitter -->
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Chronus" />
-    <meta name="twitter:description" content="Welcome to the official Chronus website." />
-    <meta name="twitter:image" content="img/logo/chronus-vit.jpg" />
+  <!-- for Facebook -->
+  <meta property="fb:app_id" content="APPID" />
+  <meta property="og:title" content="Chronus" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image:url" content="img/logo/chronus-vit.jpg" />
+  <meta property="og:url" content="https://www.chronusofficial.com/" />
+  <meta property="og:description" content="Welcome to the official Chronus website." />
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="/manifest.json">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="theme-color" content="#ffffff">
-    <link rel="shortcut icon" href="https://www.chronusofficial.com/favicon.ico" />
+  <!-- for Twitter -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chronus" />
+  <meta name="twitter:description" content="Welcome to the official Chronus website." />
+  <meta name="twitter:image" content="img/logo/chronus-vit.jpg" />
 
-    <!-- Stylesheet -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Asap:400,700|Righteous|Hammersmith+One|Lato" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap.css" media="screen" title="no title" charset="utf-8">
-    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/main.css" media="screen" title="no title" charset="utf-8">
-    <link rel="stylesheet" href="css/lightbox.css">
-  </head>
-  <body id="bodyElement">
-    <div id="loader-wrapper">
-      <div id="loader"><img src="img/logo/ChronusOWhite1.png" alt="Chronus O logo loading website animation"></div>
-      <div class="loader-section section-left"></div>
-      <div class="loader-section section-right"></div>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="shortcut icon" href="https://www.chronusofficial.com/favicon.ico" />
+
+  <!-- Stylesheet -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Asap:400,700|Righteous|Hammersmith+One|Lato" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/main.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="css/lightbox.css">
+</head>
+
+<body id="bodyElement">
+  <div id="loader-wrapper">
+    <div id="loader"><img src="img/logo/ChronusOWhite1.png" alt="Chronus O logo loading website animation"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+  </div>
+  <div class="topContainer">
+    <div class="container">
+      <header class="page-header">
+        <nav class="navbar navbar-inverse renovering-nav" data-ng-controller="navController">
+          <a href="/"><img src="img/logo/rsz_logo.png" alt="Chronus Logo" class="navbar-brand-desktop"></a>
+          <ul class="nav nav-tabs nav-justified">
+            <li data-ng-class="{active: isActive('/')}"><a href="/">HOME</a></li>
+            <li data-ng-class="{active: isActive('/news')}"><a href="/news">NEWS</a></li>
+            <!-- <li data-ng-class="{active: isActive('/gallery-live')}"><a href="/gallery-live">GALLERY</a></li>-->
+            <li data-ng-class="{active: isActive('/shows')}"><a href="/shows">SHOWS</a></li>
+            <li data-ng-class="{active: isActive('/band')}"><a href="/band">BAND</a></li>
+            <li data-ng-class="{active: isActive('/store')}"><a href="/store">MERCH</a></li>
+            <li data-ng-class="{active: isActive('/contact')}"><a href="/contact">CONTACT</a></li>
+          </ul>
+        </nav>
+      </header>
     </div>
-    <div class="topContainer">
-      <div class="container">
-        <header class="page-header">
-          <nav class="navbar navbar-inverse renovering-nav" data-ng-controller="navController">
-            <a href="/"><img src="img/logo/rsz_logo.png" alt="Chronus Logo" class="navbar-brand-desktop"></a>
-            <ul class="nav nav-tabs nav-justified">
-              <li data-ng-class="{active: isActive('/')}"><a href="/">HOME</a></li>
-              <li data-ng-class="{active: isActive('/news')}"><a href="/news">NEWS</a></li>
-              <li data-ng-class="{active: isActive('/tour')}"><a href="/tour">TOUR</a></li>
-              <li data-ng-class="{active: isActive('/band')}"><a href="/band">BAND</a></li>
-              <li data-ng-class="{active: isActive('/store')}"><a href="/store">STORE</a></li>
-              <li data-ng-class="{active: isActive('/contact')}"><a href="/contact">CONTACT</a></li>
-            </ul>
-          </nav>
-        </header>
-      </div>
-    </div>
-    <div class="topContainer2">
-      <div class="container">
-        <header class="page-header">
-          <nav class="navbar navbar-inverse" data-ng-controller="navController">
-            <div class="container-fluid">
-              <a href="/"><img class="navbar-brand" src="img/logo/rsz_logo.png" alt="Chronus Logo Official Website"></a>
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+  </div>
+  <div class="topContainer2">
+    <div class="container">
+      <header class="page-header">
+        <nav class="navbar navbar-inverse" data-ng-controller="navController">
+          <div class="container-fluid">
+            <a href="/"><img class="navbar-brand" src="img/logo/rsz_logo.png" alt="Chronus Logo Official Website"></a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-              <ul class="nav nav-tabs nav-justified">
-                <li data-ng-class="{active: isActive('/')}"><a class="smoothScroll" href="/">HOME</a></li>
-                <li data-ng-class="{active: isActive('/news')}"><a href="/news">NEWS</a></li>
-                <li data-ng-class="{active: isActive('/tour')}"><a href="/tour">TOUR</a></li>
-                <li data-ng-class="{active: isActive('/band')}"><a href="/band">BAND</a></li>
-                <li data-ng-class="{active: isActive('/store')}"><a href="/store">STORE</a></li>
-                <li data-ng-class="{active: isActive('/contact')}"><a href="/contact">CONTACT</a></li>
-              </ul>
-            </div>
-          </nav>
-        </header>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav nav-tabs nav-justified">
+              <li data-ng-class="{active: isActive('/')}"><a class="smoothScroll" href="/">HOME</a></li>
+              <li data-ng-class="{active: isActive('/news')}"><a href="/news">NEWS</a></li>
+              <!-- <li data-ng-class="{active: isActive('/gallery')}"><a href="/gallery">GALLERY</a></li>-->
+              <li data-ng-class="{active: isActive('/shows')}"><a href="/shows">SHOWS</a></li>
+              <li data-ng-class="{active: isActive('/band')}"><a href="/band">BAND</a></li>
+              <li data-ng-class="{active: isActive('/store')}"><a href="/store">MERCH</a></li>
+              <li data-ng-class="{active: isActive('/contact')}"><a href="/contact">CONTACT</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+    </div>
+  </div>
+  <!-- Placeholder for views -->
+  <div class="ng-view hidden"></div>
+  <!-- Footer Open -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footerText">
+        <div class="row">
+          <div class="col-xs-6 col-md-6 align-left">
+            <img src="img/logo/logo.png" alt="Chronus Logo" class="footerLogo">
+          </div>
+          <div class="col-xs-6 col-md-6 social-media align-right">
+            <a target="_blank" href="https://www.facebook.com/chronusband"><img class="social1" src="img/partners/FB-f-Logo__white_1024.png" alt="Chronus on Facebook" /></a>
+            <a target="_blank" href="https://www.youtube.com/user/Chronusband/"><img class="social1" src="img/partners/YouTube_light_color_icon.png" alt="Chronus on YouTube" /></a>
+            <a target="_blank" href="https://www.instagram.com/chronusband/"><img class="social1" src="img/partners/glyph-logo_May2016.png" alt="Chronus on Instagram" /></a>
+            <a target="_blank" href="https://twitter.com/ChronusOfficial"><img class="social1" src="img/partners/Twitter_Social_Icon_White.png" alt="Chronus on Twitter" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="footerText">
+        <p>&#169; 2017 Jonatan Östling</p>
       </div>
     </div>
-    <!-- Placeholder for views -->
-    <div class="ng-view hidden"></div>
-    
-    <!-- jQuery version 2.1.4 -->
-    <script src="js/jquery-2.1.4.min.js" charset="utf-8"></script>
-    <!-- AngularJS -->
-    <script src="js/angular.min.js"></script>
-    <!-- AngularJS route -->
-    <script src="js/angular-route.min.js"></script>
-    <script src="app/app.js"></script>
-    <script src="app/controllers/navController.js"></script>
-    <script src="js/bootstrap.js" charset="utf-8"></script>
-    <script src="js/lightbox.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+  </footer>
+  <!-- Footer Close -->
+  <!-- jQuery version 2.1.4 -->
+  <script src="js/jquery-2.1.4.min.js" charset="utf-8"></script>
+  <!-- AngularJS -->
+  <script src="js/angular.min.js"></script>
+  <!-- AngularJS route -->
+  <script src="js/angular-route.min.js"></script>
+  <script src="app/app.js"></script>
+  <script src="app/controllers/navController.js"></script>
+  <script src="js/bootstrap.js" charset="utf-8"></script>
+  <script src="js/lightbox.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
 </html>
