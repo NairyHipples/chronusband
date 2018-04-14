@@ -13,15 +13,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   flex-grow: 1;
-  transition: filter .25s ease-in-out;
-  -moz-transition: filter .25s ease-in-out;
-  -webkit-transition: filter .25s ease-in-out;
-  -webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
-  filter: grayscale(0%); /* FF 35+ */
-}
-.flexGrow1:hover, .flexGrow2:hover {
-  -webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
-  filter: grayscale(100%); /* FF 35+ */
 }
 .flexGrow2 {
   display: inline-block;
@@ -31,11 +22,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   flex-grow: 2;
-  transition: filter .25s ease-in-out;
-  -moz-transition: filter .25s ease-in-out;
-  -webkit-transition: filter .25s ease-in-out;
-  -webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
-  filter: grayscale(0%); /* FF 35+ */
 }
 .imageH1 {
   position: absolute;
@@ -45,24 +31,24 @@
   font-weight: lighter;
 }
 .imageLayoutBlock1 {
-  background-image: url("../img/gallery/live/Torstain_kuvat_antti_pitkajarvi_7.jpg");
+  background-image: url("../img/gallery/live/chronus-baron.PNG");
   position: relative;
 }
 .imageLayoutBlock2 {
-  background-image: url("../img/gallery/promo/BaronPosterEleine.jpg");
+  background-image: url("../img/gallery/live/svante-baron.jpeg");
   position: relative;
 }
 .imageLayoutBlock3 {
-  background-image: url("../img/gallery/live/2017.11.1801Oliver.jpg");
+  background-image: url("../img/gallery/promo/chronus-band.jpg");
   position: relative;
 }
 .imageLayoutBlock4 {
-  background-image: url("../img/gallery/live/20881971_1454466494640999_2918595510455871033_n.jpg");
+  background-image: url("../img/gallery/live/chronus-oliver.PNG");
   background-position: top;
   position: relative;
 }
 .imageLayoutBlock5 {
-  background-image: url("../img/gallery/live/ChronusTavastia7Cropped.png");
+  background-image: url("../img/gallery/live/jonatan.jpeg");
   position: relative;
 }
 
@@ -188,11 +174,16 @@ input, textarea {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 800;
 }
+.h3 {
+  font-weight: lighter;
+}
+
 .latoTahomaGeneva {
   display: inline-block;
   color: #fff;
   font-family: 'Lato', 'Tahoma', 'Geneva', sans-serif;
 }
+
 p {
   font-size: 1.3em;
   margin: 19px 0 19px;
@@ -279,7 +270,7 @@ footer .footerText:last-child {
   color: #fff;
   font-weight: 700;
   cursor: default;
-  background-color: #000;
+  background-color: #333;
 }
 .nav-tabs.nav-justified > .active > a, .nav-tabs.nav-justified > .active > a:hover, .nav-tabs.nav-justified > .active > a:focus {
   border: 0px;
@@ -369,32 +360,6 @@ footer .footerText:last-child {
   transition: width 0.1s, height 0.1s, padding-top 0.1s;
   -webkit-transition-timing-function: ease;
   transition-timing-function: ease;
-}
-.fa:hover {
-  color: #eee;
-  width: 230px;
-  height: 230px;
-}
-.fa-cutlery,
-.fa-bath,
-.fa-home,
-.fa-building,
-.fa-tint {
-  padding-top: 50px;
-}
-.fa-cutlery:hover,
-.fa-bath:hover,
-.fa-home:hover,
-.fa-building:hover {
-  padding-top: 65px;
-}
-.fa-tint:hover{
-  color: #333;
-}
-.partnerLogo {
-  display: inline;
-  margin-right: 20px;
-  margin-left: 20px;
 }
 .img-logos img {
   display: inline-block;
@@ -596,9 +561,7 @@ footer .footerText:last-child {
   ); */
 }
 .container2 {
-  max-width: 1200px;
-  padding-right: 15px;
-  padding-left: 15px;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
 }
@@ -888,7 +851,7 @@ footer .footerText:last-child {
 .img-circle {
   display: inline;
   margin-right: 6px;
-  margin-bottom: 7px;
+  margin-left: 8px;
 }
 .img-circle2 {
   margin-top: 30px;
@@ -902,6 +865,22 @@ footer .footerText:last-child {
 .social-media img {
   display: inline-block;
   margin-right: 25px;
+}
+.gear-list {
+  text-align: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.gear-list-img {
+  width: 100px;
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 /*****************************/
 /********** MODAL ************/
@@ -1058,6 +1037,9 @@ footer .footerText:last-child {
   }
 }
 @media (max-width: 767px) {
+  .gear-list-img {
+    width: 20%;
+  }
   .flexGrow2 {
     min-width: 250px;
   }
@@ -1068,7 +1050,7 @@ footer .footerText:last-child {
     border-bottom: 1px solid #666;
   }
   .tour-item .posterImg {
-    width: 200px;
+    width: 70%;
   }
   body {
     height: 100%;
@@ -1434,9 +1416,6 @@ footer .footerText:last-child {
 }
 .loaded #loader-wrapper {
   visibility: hidden;
-  -webkit-transform: translateY(-100&);  /* Chrome, Opera 15+, Safari 3.1+ */
-  -ms-transform: translateY(-100&);  /* IE 9 */
-  transform: translateY(-100&);  /* Firefox 16+, IE 10+, Opera */
   -webkit-transition: all 0.3s 1s ease-out; /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6 */
   transition: all 0.3s 1s ease-out /*Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+ */
 
