@@ -31,11 +31,11 @@
   font-weight: lighter;
 }
 .imageLayoutBlock1 {
-  background-image: url("../img/gallery/live/chronus-baron.PNG");
+  background-image: url("../img/gallery/promo/31356535_1694770663943913_5943574592600670208_o.jpg");
   position: relative;
 }
 .imageLayoutBlock2 {
-  background-image: url("../img/gallery/live/svante-baron.jpeg");
+  background-image: url("../img/gallery/live/chronus-baron.PNG");
   position: relative;
 }
 .imageLayoutBlock3 {
@@ -852,6 +852,7 @@ footer .footerText:last-child {
   display: inline;
   margin-right: 6px;
   margin-left: 8px;
+  margin-bottom: 8px;
 }
 .img-circle2 {
   margin-top: 30px;
