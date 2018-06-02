@@ -33,23 +33,28 @@
 .imageLayoutBlock1 {
   background-image: url("../img/gallery/promo/31356535_1694770663943913_5943574592600670208_o.jpg");
   position: relative;
+  filter: grayscale(100%);
 }
 .imageLayoutBlock2 {
-  background-image: url("../img/gallery/promo/megadethchronus_master_insta.png");
+  background-image: url("../img/gallery/live/chronus-baron.PNG");
   position: relative;
+  filter: grayscale(100%);
 }
 .imageLayoutBlock3 {
   background-image: url("../img/gallery/promo/chronus-band.jpg");
   position: relative;
+  filter: grayscale(100%);
 }
 .imageLayoutBlock4 {
   background-image: url("../img/gallery/live/chronus-oliver.PNG");
   background-position: top;
   position: relative;
+  filter: grayscale(100%);
 }
 .imageLayoutBlock5 {
   background-image: url("../img/gallery/live/jonatan.jpeg");
   position: relative;
+  filter: grayscale(100%);
 }
 
 html {
